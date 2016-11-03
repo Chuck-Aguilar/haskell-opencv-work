@@ -1,0 +1,387 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-25 12:35:42.046269 UTC
+
+interface simpl_3KtLGDpFPvjB6VnwWh4q2E:ResizeImage 7103
+  interface hash: 002245301d054c41f69d3bbeed86b44d
+  ABI hash: 8cf46425a3324e6bd1339e5052c284ea
+  export-list hash: df26a02e1904da0b1c9922b50121b382
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 9522f2e7d836bf33cf899b38113e6a7f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ResizeImage.resizeImage
+module dependencies: Utils
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      StateVar-1.1.0.4@State_IOvB80WkYNkEizdt0JVpzy
+                      adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8
+                      aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb
+                      ansi-terminal-0.6.2.3@ansit_BDlVdfJGo3VHCIHxPTNjH1
+                      ansi-wl-pprint-0.6.7.3@ansiw_KTAhiPa3RNI09mbeoAwSSX
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE base-4.8.2.0
+                      base64-bytestring-1.0.0.1@base6_AkCk8zInckjJsyQ4AIFHPN
+                      base-orphans-0.5.4@baseo_0gFtKFBT26OGSKHmmdqdfx
+                      bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      byteable-0.1.1@bytea_38yjJsjDRm9KusCn8Yo4aB
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt
+                      cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
+                      charset-0.3.7.1@chars_IKWHp38FOStAjLo2kDQeLw
+                      comonad-4.2.7.2@comon_5wEqfQVXg9MGfIPxSKfS4M
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      contravariant-1.4@contr_7gFjdZ6ciei9744gjZQMHp
+                      cryptonite-0.19@crypt_9fTgDVqlngxExANMsHUBS7
+                      cryptohash-0.11.9@crypt_Ci4gov4yJDX2vQS0qXhVYa
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm
+                      distributive-0.5.0.2@distr_55SIdsoyihS4jXBaaVvPQX
+                      dlist-0.7.1.2@dlist_AO7XAasbAeyL0XLKeq1Aui
+                      exceptions-0.8.3@excep_BEih2K3eMGTE4cg5iulra8
+                      fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G
+                      filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m
+                      free-4.12.4@free_D8pop1Lncn7BkE4zjJTjla ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I
+                      inline-c-cpp-0.1.0.0@inlin_0n1qt9uWr0U3q3JGxHLd1q
+                      inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI integer-gmp-1.0.0.0
+                      kan-extensions-4.2.3@kanex_8yLFa561sPQJZ5XPOmzMGi
+                      lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if
+                      linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv
+                      memory-0.13@memor_AtLbf837cOS9kNhIuRhbe8
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R
+                      parsers-0.12.4@parse_1TDFRcR03ve3ukSIOnypnP
+                      parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y
+                      prelude-extras-0.4.0.3@prelu_1gQpKVfMHul71LsAFgGRhv
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      profunctors-5.2@profu_LHFqrYSAR0z1HJQ4sjj1Mu
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      reflection-2.1.2@refle_Is9SiIf9zRHG2wDNDxPaS9
+                      repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou
+                      scientific-0.3.4.9@scien_1WVNjGUftkQ9QzH4DOM2n1
+                      semigroupoids-5.0.1@semig_GRN7TOS9fx09tFw63gc4EK
+                      semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1
+                      stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
+                      tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6 template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+                      unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw
+                      vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln
+orphans: aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb:Data.Aeson.Types.Generic
+         aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb:Data.Aeson.Types.Instances
+         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.Text.Internal
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         base-orphans-0.5.4@baseo_0gFtKFBT26OGSKHmmdqdfx:Data.Orphans
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Instances
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Matx
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Point
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Rect
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Size
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Vec
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.JSON
+         reflection-2.1.2@refle_Is9SiIf9zRHG2wDNDxPaS9:Data.Reflection
+         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Arbitrary
+         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Operators.Reduction
+         stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD:Control.Monad.STM
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
+family instance modules: adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8:Data.Functor.Rep
+                         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.Internal.Types
+                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
+                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+                         base-4.8.2.0:GHC.TypeLits
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Biff
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Clown
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Flip
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Join
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Joker
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Product
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Sum
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Tannen
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Wrapped
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.Get
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.Signed
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.VarInt
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         dlist-0.7.1.2@dlist_AO7XAasbAeyL0XLKeq1Aui:Data.DList
+                         inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI:Language.C.Inline
+                         inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI:Language.C.Inline.Context
+                         kan-extensions-4.2.3@kanex_8yLFa561sPQJZ5XPOmzMGi:Data.Functor.Yoneda
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.At
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Internal.Indexed
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Internal.Zoom
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Reified
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Tuple
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Wrapped
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Plucker
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Quaternion
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V0
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V1
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V3
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V4
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Mat.Repa
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Features2d
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.CascadeClassifier
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.FeatureDetection
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.C.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat.ToFrom
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Matx
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Point
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Rect
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Size
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Vec
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Exception
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Video.MotionAnalysis
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.VideoIO.VideoCapture
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         profunctors-5.2@profu_LHFqrYSAR0z1HJQ4sjj1Mu:Data.Profunctor.Rep
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Operators.Mapping
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.ByteString
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Cursored
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Delayed
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.ForeignPtr
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.HintInterleave
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.HintSmall
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Partitioned
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Unboxed
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Undefined
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Vector
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Slice
+                         semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1:Data.List.NonEmpty
+                         semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1:Data.Semigroup
+                         tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Base
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashSet
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Primitive
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Storable
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Functor.Identity 33f652d04ce95624f8f871881fa3b737
+import  -/  base-4.8.2.0:Data.Proxy ace6418f386b055d277aea86443e836b
+import  -/  base-4.8.2.0:Data.Word ec8deb535202352cc8b509b14004bcbd
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Int 28d8a9f7cfc272358fb4631d98c579ce
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2 5c727ef3668ea96ff4edd21393f561f0
+import  -/  mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8:Control.Monad.Except a48c40e49a1635a6f6c139e86212e5c9
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Size 22c2cce3f640da60123746b50cc2d006
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.GeometricImgTransform ddeb294718c7ccaacbb0bd4bd292e7b2
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.Types d97b967ddb39cffa9045d44f47303584
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Size 5aef4bf8f9d9258fa2f01cbcdfa529e8
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Exception 2b86de9ec00476a99d2632e30269dd90
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.TypeLevel 3086e176dc0d51d63cf12f8ac704765e
+import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
+  exports: 0a04ff5e9ffd8025faa2d6c44be78a68
+  getHandW 582c0c79fab27e0c7022032e2d83d6e0
+  getSize cb9974e5e583e051016f454e137e674a
+090b7a846fdb0b7b5f6940c355252678
+  resizeImage ::
+    OpenCV.Internal.Core.Types.Mat.Mat
+      ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+      'OpenCV.TypeLevel.D
+      'OpenCV.TypeLevel.D
+    -> GHC.Types.IO
+         (OpenCV.Internal.Core.Types.Mat.Mat
+            ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+            'OpenCV.TypeLevel.D
+            'OpenCV.TypeLevel.D)
+  {- Arity: 2, Strictness: <L,U(U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                ResizeImage.resizeImage1
+                  `cast`
+                (<OpenCV.Internal.Core.Types.Mat.Mat
+                    ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                    'OpenCV.TypeLevel.D
+                    'OpenCV.TypeLevel.D>_R
+                 ->_R Sym (GHC.Types.NTCo:IO[0]
+                               <OpenCV.Internal.Core.Types.Mat.Mat
+                                  ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                                  'OpenCV.TypeLevel.D
+                                  'OpenCV.TypeLevel.D>_R)) -}
+2734d37e60e856b653f79ee16ae001bc
+  resizeImage1 ::
+    OpenCV.Internal.Core.Types.Mat.Mat
+      ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+      'OpenCV.TypeLevel.D
+      'OpenCV.TypeLevel.D
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          OpenCV.Internal.Core.Types.Mat.Mat
+            ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+            'OpenCV.TypeLevel.D
+            'OpenCV.TypeLevel.D #)
+  {- Arity: 2, Strictness: <L,U(U,U)><L,U>,
+     Unfolding: (\ image :: OpenCV.Internal.Core.Types.Mat.Mat
+                              ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                              'OpenCV.TypeLevel.D
+                              'OpenCV.TypeLevel.D
+                   s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 (# s,
+                    case OpenCV.ImgProc.GeometricImgTransform.resize1
+                           @ 'OpenCV.TypeLevel.D
+                           @ 'OpenCV.TypeLevel.D
+                           @ 'OpenCV.TypeLevel.D
+                           @ 'OpenCV.TypeLevel.D
+                           (OpenCV.ImgProc.GeometricImgTransform.ResizeAbs
+                              (OpenCV.Core.Types.Size.$fIsSizeV2Int32_$ctoSize
+                                 (case OpenCV.Internal.Core.Types.Mat.matInfo
+                                         @ ('OpenCV.TypeLevel.S
+                                              '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                                         @ 'OpenCV.TypeLevel.D
+                                         @ 'OpenCV.TypeLevel.D
+                                         image of wild { OpenCV.Internal.Core.Types.Mat.MatInfo ds1 ds2 dt ->
+                                  case ds1 of wild1 {
+                                    []
+                                    -> case ResizeImage.resizeImage5
+                                       ret_ty (Linear.V2.V2 GHC.Int.Int32)
+                                       of {}
+                                    : h ds
+                                    -> case ds of wild2 {
+                                         []
+                                         -> case ResizeImage.resizeImage5
+                                            ret_ty (Linear.V2.V2 GHC.Int.Int32)
+                                            of {}
+                                         : w ds4
+                                         -> case ds4 of wild3 {
+                                              []
+                                              -> case w of ww { GHC.Int.I32# ww1 ->
+                                                 case h of ww2 { GHC.Int.I32# ww3 ->
+                                                 case GHC.Prim./##
+                                                        500.0
+                                                        (GHC.Prim.int2Double#
+                                                           ww3) of wild4 { DEFAULT ->
+                                                 case GHC.Integer.Type.decodeDoubleInteger
+                                                        (GHC.Prim.*##
+                                                           (GHC.Prim.int2Double# ww1)
+                                                           wild4) of ds5 { (#,#) ipv ipv1 ->
+                                                 case GHC.Prim.tagToEnum#
+                                                        @ GHC.Types.Bool
+                                                        (GHC.Prim.<# ipv1 0) of wild5 {
+                                                   GHC.Types.False
+                                                   -> case GHC.Integer.Type.integerToInt
+                                                             (GHC.Integer.Type.shiftLInteger
+                                                                ipv
+                                                                ipv1) of wild6 { DEFAULT ->
+                                                      Linear.V2.V2
+                                                        @ GHC.Int.Int32
+                                                        (GHC.Int.I32# (GHC.Prim.narrow32Int# wild6))
+                                                        ResizeImage.resizeImage4 }
+                                                   GHC.Types.True
+                                                   -> let {
+                                                        s1 :: GHC.Prim.Int#
+                                                        = GHC.Prim.negateInt# ipv1
+                                                      } in
+                                                      case GHC.Prim.tagToEnum#
+                                                             @ GHC.Types.Bool
+                                                             (GHC.Prim.># s1 52) of wild6 {
+                                                        GHC.Types.False
+                                                        -> case GHC.Integer.Type.ltInteger#
+                                                                  ipv
+                                                                  Utils.getSize3 of wild7 { DEFAULT ->
+                                                           case GHC.Prim.tagToEnum#
+                                                                  @ GHC.Types.Bool
+                                                                  wild7 of wild8 {
+                                                             GHC.Types.False
+                                                             -> case GHC.Integer.Type.integerToInt
+                                                                       ipv of n { DEFAULT ->
+                                                                Linear.V2.V2
+                                                                  @ GHC.Int.Int32
+                                                                  (GHC.Int.I32#
+                                                                     (GHC.Prim.narrow32Int#
+                                                                        (GHC.Prim.uncheckedIShiftRA#
+                                                                           n
+                                                                           s1)))
+                                                                  ResizeImage.resizeImage4 }
+                                                             GHC.Types.True
+                                                             -> case GHC.Integer.Type.integerToInt
+                                                                       (GHC.Integer.Type.negateInteger
+                                                                          ipv) of n { DEFAULT ->
+                                                                Linear.V2.V2
+                                                                  @ GHC.Int.Int32
+                                                                  (GHC.Int.I32#
+                                                                     (GHC.Prim.narrow32Int#
+                                                                        (GHC.Prim.negateInt#
+                                                                           (GHC.Prim.uncheckedIShiftRA#
+                                                                              n
+                                                                              s1))))
+                                                                  ResizeImage.resizeImage4 } } }
+                                                        GHC.Types.True
+                                                        -> ResizeImage.resizeImage3 } } } } } }
+                                              : ipv ipv1
+                                              -> case ResizeImage.resizeImage5
+                                                 ret_ty (Linear.V2.V2 GHC.Int.Int32)
+                                                 of {} } } } })))
+                           OpenCV.ImgProc.Types.InterCubic
+                           image of wild {
+                      Data.Either.Left x1 -> ResizeImage.resizeImage2 x1
+                      Data.Either.Right y -> y } #)) -}
+77c91a38adc68768a3bb2a4abc30f8ad
+  resizeImage2 ::
+    OpenCV.Internal.Exception.CvException
+    -> OpenCV.Internal.Core.Types.Mat.Mat
+         ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+         'OpenCV.TypeLevel.D
+         'OpenCV.TypeLevel.D
+  {- Arity: 1, Strictness: <L,U>b -}
+844969514f3da93bbac77c0fb11c4ae6
+  resizeImage3 :: Linear.V2.V2 GHC.Int.Int32
+  {- HasNoCafRefs,
+     Unfolding: (Linear.V2.V2
+                   @ GHC.Int.Int32
+                   Utils.getSize2
+                   ResizeImage.resizeImage4) -}
+062afd2f8aa7f68bb849651ac828d1bf
+  resizeImage4 :: GHC.Int.Int32
+  {- HasNoCafRefs, Unfolding: (GHC.Int.I32# 500) -}
+5e7c8fc2bba7fe05a898c925b0eb09a9
+  resizeImage5 :: (GHC.Int.Int32, GHC.Int.Int32)
+  {- Strictness: b -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

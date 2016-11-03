@@ -1,0 +1,14 @@
+module Lib
+    ( someFunc
+    ) where
+
+import Control.Monad ( void )
+import qualified OpenCV as CV
+import qualified Data.ByteString as B
+
+someFunc :: IO ()
+someFunc = do
+	img <- CV.imdecode CV.ImreadUnchanged <$> B.readFile "/home/chuck/Pictures/such-a-bad-day.jpg"
+	CV.withWindow "test" $ \window -> do
+	 CV.imshow window img
+	 void $ CV.waitKey 10000

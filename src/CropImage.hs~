@@ -1,0 +1,14 @@
+module CropImage
+    ( 
+	cropImage
+    ) where
+
+import Control.Monad ( void )
+import qualified OpenCV as CV
+
+--cropImage :: -- -> IO()
+cropImage img = do
+	CV.withWindow "test" $ \window -> do
+	 CV.imshow window img
+	 void $ CV.waitKey 10000
+

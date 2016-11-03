@@ -1,0 +1,28 @@
+Configuring bindings-DSL-1.0.23...
+Building bindings-DSL-1.0.23...
+Preprocessing library bindings-DSL-1.0.23...
+[1 of 1] Compiling Bindings.Utilities ( Bindings/Utilities.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Bindings/Utilities.o )
+
+Bindings/Utilities.hs:2:1: Warning: Tab character
+
+Bindings/Utilities.hs:3:1: Warning: Tab character
+
+Bindings/Utilities.hs:32:1: Warning: Tab character
+
+Bindings/Utilities.hs:33:1: Warning: Tab character
+
+Bindings/Utilities.hs:34:1: Warning: Tab character
+
+Bindings/Utilities.hs:35:1: Warning: Tab character
+
+Bindings/Utilities.hs:36:1: Warning: Tab character
+
+Bindings/Utilities.hs:37:1: Warning: Tab character
+
+Bindings/Utilities.hs:38:1: Warning: Tab character
+
+Bindings/Utilities.hs:39:1: Warning: Tab character
+In-place registering bindings-DSL-1.0.23...
+Installing library in
+/home/chuck/.stack/snapshots/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/bindings-DSL-1.0.23-Es09zjDpTFQCqScuh7qYEQ
+Registering bindings-DSL-1.0.23...

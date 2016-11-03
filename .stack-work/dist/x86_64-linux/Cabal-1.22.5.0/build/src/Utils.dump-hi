@@ -1,0 +1,575 @@
+
+==================== FINAL INTERFACE ====================
+2016-10-25 12:35:41.627284 UTC
+
+interface simpl_3KtLGDpFPvjB6VnwWh4q2E:Utils 7103
+  interface hash: acdcf032d434220c5fc59dac0f321197
+  ABI hash: 2e856b50208fdde509d21e6a8a323d34
+  export-list hash: 0a04ff5e9ffd8025faa2d6c44be78a68
+  orphan hash: 0826d89ba57d0215d0585c0fc4ce27eb
+  flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Utils.dictAreaPoints
+  Utils.getHandW
+  Utils.getImageFromEither
+  Utils.getListOfPoints
+  Utils.getSize
+module dependencies:
+package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
+                      StateVar-1.1.0.4@State_IOvB80WkYNkEizdt0JVpzy
+                      adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8
+                      aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb
+                      ansi-terminal-0.6.2.3@ansit_BDlVdfJGo3VHCIHxPTNjH1
+                      ansi-wl-pprint-0.6.7.3@ansiw_KTAhiPa3RNI09mbeoAwSSX
+                      array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE base-4.8.2.0
+                      base64-bytestring-1.0.0.1@base6_AkCk8zInckjJsyQ4AIFHPN
+                      base-orphans-0.5.4@baseo_0gFtKFBT26OGSKHmmdqdfx
+                      bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx
+                      binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      byteable-0.1.1@bytea_38yjJsjDRm9KusCn8Yo4aB
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt
+                      cereal-0.5.2.0@cerea_GKnWyxn5hRWK9xfCMeMEL8
+                      charset-0.3.7.1@chars_IKWHp38FOStAjLo2kDQeLw
+                      comonad-4.2.7.2@comon_5wEqfQVXg9MGfIPxSKfS4M
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      contravariant-1.4@contr_7gFjdZ6ciei9744gjZQMHp
+                      cryptonite-0.19@crypt_9fTgDVqlngxExANMsHUBS7
+                      cryptohash-0.11.9@crypt_Ci4gov4yJDX2vQS0qXhVYa
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      directory-1.2.2.0@direc_0hFG6ZxK1nk4zsyOqbNHfm
+                      distributive-0.5.0.2@distr_55SIdsoyihS4jXBaaVvPQX
+                      dlist-0.7.1.2@dlist_AO7XAasbAeyL0XLKeq1Aui
+                      exceptions-0.8.3@excep_BEih2K3eMGTE4cg5iulra8
+                      fail-4.9.0.0@fail_2xB1AvdW34sDm9N3JOe33G
+                      filepath-1.4.0.0@filep_Ey7a1in9roBAE8bUFJ5R9m
+                      free-4.12.4@free_D8pop1Lncn7BkE4zjJTjla ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I
+                      inline-c-cpp-0.1.0.0@inlin_0n1qt9uWr0U3q3JGxHLd1q
+                      inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI integer-gmp-1.0.0.0
+                      kan-extensions-4.2.3@kanex_8yLFa561sPQJZ5XPOmzMGi
+                      lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if
+                      linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv
+                      memory-0.13@memor_AtLbf837cOS9kNhIuRhbe8
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R
+                      parsers-0.12.4@parse_1TDFRcR03ve3ukSIOnypnP
+                      parsec-3.1.11@parse_AtBt9uDOS2NCyWnucTHV3y
+                      prelude-extras-0.4.0.3@prelu_1gQpKVfMHul71LsAFgGRhv
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3
+                      profunctors-5.2@profu_LHFqrYSAR0z1HJQ4sjj1Mu
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      reflection-2.1.2@refle_Is9SiIf9zRHG2wDNDxPaS9
+                      repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou
+                      scientific-0.3.4.9@scien_1WVNjGUftkQ9QzH4DOM2n1
+                      semigroupoids-5.0.1@semig_GRN7TOS9fx09tFw63gc4EK
+                      semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1
+                      stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
+                      tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6 template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      tf-random-0.5@tfran_1eLmkn3WUnC8NZpPuDLGKF
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+                      unix-2.7.1.0@unix_KZL8h98IqDM57kQSPo1mKx
+                      unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw
+                      vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln
+orphans: aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb:Data.Aeson.Types.Generic
+         aeson-0.11.2.1@aeson_43tr7H3v7HP7PrHDWSJDlb:Data.Aeson.Types.Instances
+         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.Text.Internal
+         base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         base-orphans-0.5.4@baseo_0gFtKFBT26OGSKHmmdqdfx:Data.Orphans
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Instances
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Matx
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Point
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Rect
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Size
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Vec
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat
+         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.JSON
+         reflection-2.1.2@refle_Is9SiIf9zRHG2wDNDxPaS9:Data.Reflection
+         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Arbitrary
+         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Operators.Reduction
+         stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD:Control.Monad.STM
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Fusion.Bundle
+         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
+family instance modules: adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8:Data.Functor.Rep
+                         attoparsec-0.13.0.2@attop_F2JR8EcnzjH8eSBi5YocsE:Data.Attoparsec.Internal.Types
+                         base-4.8.2.0:Control.Applicative base-4.8.2.0:Data.Either
+                         base-4.8.2.0:Data.Functor.Identity base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:Data.Void
+                         base-4.8.2.0:GHC.Exts base-4.8.2.0:GHC.Generics
+                         base-4.8.2.0:GHC.TypeLits
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Biff
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Clown
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Flip
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Join
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Joker
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Product
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Sum
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Tannen
+                         bifunctors-5.2@bifun_FaZUwfD8a9f4Qa0UcHfTzx:Data.Bifunctor.Wrapped
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.Get
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.Signed
+                         bytes-0.15.2@bytes_LGwqVSlCJrR4BGoUsj8EWt:Data.Bytes.VarInt
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         dlist-0.7.1.2@dlist_AO7XAasbAeyL0XLKeq1Aui:Data.DList
+                         inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI:Language.C.Inline
+                         inline-c-0.5.5.7@inlin_3OZqNJzciAI2n2k58MLgVI:Language.C.Inline.Context
+                         kan-extensions-4.2.3@kanex_8yLFa561sPQJZ5XPOmzMGi:Data.Functor.Yoneda
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.At
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Internal.Indexed
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Internal.Zoom
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Reified
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Tuple
+                         lens-4.13@lens_GUhLZmPn08l1pkGqj7n9if:Control.Lens.Wrapped
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Plucker
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.Quaternion
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V0
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V1
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V3
+                         linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V4
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Core.Types.Mat.Repa
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Features2d
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.CascadeClassifier
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.FeatureDetection
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.C.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat.ToFrom
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Matx
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Point
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Rect
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Size
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Vec
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Exception
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Video.MotionAnalysis
+                         opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.VideoIO.VideoCapture
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_EphY2c7CCxSCBKjAN0YTR3:Control.Monad.Primitive
+                         profunctors-5.2@profu_LHFqrYSAR0z1HJQ4sjj1Mu:Data.Profunctor.Rep
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Operators.Mapping
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.ByteString
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Cursored
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Delayed
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.ForeignPtr
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.HintInterleave
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.HintSmall
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Partitioned
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Unboxed
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Undefined
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Repr.Vector
+                         repa-3.4.1.1@repa_LF5dvoRGljlCRIQRtuaAou:Data.Array.Repa.Slice
+                         semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1:Data.List.NonEmpty
+                         semigroups-0.18.1@semig_LaeT7FLzCl4KIQUoVrPYl1:Data.Semigroup
+                         tagged-0.8.4@tagge_LPeicl3HxVfGUMMwMEsAE6:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashMap.Base
+                         unordered-containers-0.2.7.1@unord_5iWC5HdL16JGHXLbsgBJnw:Data.HashSet
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Primitive
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Storable
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
+                         vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Either e8724afd65fd432cfe9a54014f5f762d
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Int 28d8a9f7cfc272358fb4631d98c579ce
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2 5c727ef3668ea96ff4edd21393f561f0
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.ImgProc.StructuralAnalysis d3b2dd891436d50dc1a697eedc96c8b2
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
+import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Point 9a878c2731b529b8fe70b906e23b65b4
+23f9d5ab90fec35e0acb42ece1105886
+  $s$fEq(,) :: GHC.Classes.Eq (GHC.Int.Int32, GHC.Int.Int32)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Int.Int32, GHC.Int.Int32)
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     GHC.Int.$fEqInt32
+                     GHC.Int.$fEqInt32)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     GHC.Int.$fEqInt32
+                     GHC.Int.$fEqInt32) -}
+d85aeb511e03a3223c5cc240dbb19f6e
+  $s$fEq(,)3 :: GHC.Classes.Eq (GHC.Int.Int32, GHC.Int.Int32)
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Utils.$s$fEq(,) -}
+ba6427fd04059cc57e7238833f75b2a5
+  $s$fOrd(,) :: GHC.Classes.Ord (GHC.Int.Int32, GHC.Int.Int32)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Int.Int32, GHC.Int.Int32)
+                  Utils.$s$fEq(,)3
+                  (GHC.Classes.$fOrd(,)_$ccompare
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$c<
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$c<=
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$c>
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$c>=
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$cmax
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32)
+                  (GHC.Classes.$fOrd(,)_$cmin
+                     @ GHC.Int.Int32
+                     @ GHC.Int.Int32
+                     Utils.$s$fEq(,)3
+                     GHC.Int.$fOrdInt32
+                     GHC.Int.$fOrdInt32) -}
+08dc39eccf5ee9719f7ab61a8138ed9d
+  $wgetSize ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> (# GHC.Int.Int32, GHC.Int.Int32 #)
+  {- Arity: 4, Strictness: <L,U><L,U><S,1*U><S,1*U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: GHC.Prim.Int#
+                   w :: GHC.Base.Maybe GHC.Types.Int
+                   w1 :: GHC.Base.Maybe GHC.Types.Int ->
+                 case w of wild {
+                   GHC.Base.Nothing
+                   -> case w1 of wild1 {
+                        GHC.Base.Nothing
+                        -> case Utils.getSize4
+                           ret_ty (# GHC.Int.Int32, GHC.Int.Int32 #)
+                           of {}
+                        GHC.Base.Just x
+                        -> case x of wild2 { GHC.Types.I# i ->
+                           case GHC.Prim./##
+                                  (GHC.Prim.int2Double# i)
+                                  (GHC.Prim.int2Double# ww1) of wild3 { DEFAULT ->
+                           case GHC.Integer.Type.decodeDoubleInteger
+                                  (GHC.Prim.*##
+                                     (GHC.Prim.int2Double# ww)
+                                     wild3) of ds { (#,#) ipv ipv1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<# ipv1 0) of wild4 {
+                             GHC.Types.False
+                             -> case GHC.Integer.Type.integerToInt
+                                       (GHC.Integer.Type.shiftLInteger
+                                          ipv
+                                          ipv1) of wild5 { DEFAULT ->
+                                (# GHC.Int.I32# (GHC.Prim.narrow32Int# wild5),
+                                   GHC.Int.I32# (GHC.Prim.narrow32Int# i) #) }
+                             GHC.Types.True
+                             -> let {
+                                  s :: GHC.Prim.Int# = GHC.Prim.negateInt# ipv1
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.># s 52) of wild5 {
+                                  GHC.Types.False
+                                  -> case GHC.Integer.Type.ltInteger#
+                                            ipv
+                                            Utils.getSize3 of wild6 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild6 of wild7 {
+                                       GHC.Types.False
+                                       -> case GHC.Integer.Type.integerToInt ipv of n { DEFAULT ->
+                                          (# GHC.Int.I32#
+                                               (GHC.Prim.narrow32Int#
+                                                  (GHC.Prim.uncheckedIShiftRA# n s)),
+                                             GHC.Int.I32# (GHC.Prim.narrow32Int# i) #) }
+                                       GHC.Types.True
+                                       -> case GHC.Integer.Type.integerToInt
+                                                 (GHC.Integer.Type.negateInteger
+                                                    ipv) of n { DEFAULT ->
+                                          (# GHC.Int.I32#
+                                               (GHC.Prim.narrow32Int#
+                                                  (GHC.Prim.negateInt#
+                                                     (GHC.Prim.uncheckedIShiftRA# n s))),
+                                             GHC.Int.I32# (GHC.Prim.narrow32Int# i) #) } } }
+                                  GHC.Types.True
+                                  -> (# Utils.getSize2,
+                                        GHC.Int.I32# (GHC.Prim.narrow32Int# i) #) } } } } } }
+                   GHC.Base.Just a1
+                   -> case w1 of wild1 {
+                        GHC.Base.Nothing
+                        -> case a1 of wild2 { GHC.Types.I# x# ->
+                           case GHC.Prim./##
+                                  (GHC.Prim.int2Double# x#)
+                                  (GHC.Prim.int2Double# ww) of wild3 { DEFAULT ->
+                           case GHC.Integer.Type.decodeDoubleInteger
+                                  (GHC.Prim.*##
+                                     (GHC.Prim.int2Double# ww1)
+                                     wild3) of ds { (#,#) ipv ipv1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<# ipv1 0) of wild4 {
+                             GHC.Types.False
+                             -> case GHC.Integer.Type.integerToInt
+                                       (GHC.Integer.Type.shiftLInteger
+                                          ipv
+                                          ipv1) of wild5 { DEFAULT ->
+                                (# GHC.Int.I32# (GHC.Prim.narrow32Int# x#),
+                                   GHC.Int.I32# (GHC.Prim.narrow32Int# wild5) #) }
+                             GHC.Types.True
+                             -> let {
+                                  s :: GHC.Prim.Int# = GHC.Prim.negateInt# ipv1
+                                } in
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.># s 52) of wild5 {
+                                  GHC.Types.False
+                                  -> case GHC.Integer.Type.ltInteger#
+                                            ipv
+                                            Utils.getSize3 of wild6 { DEFAULT ->
+                                     case GHC.Prim.tagToEnum# @ GHC.Types.Bool wild6 of wild7 {
+                                       GHC.Types.False
+                                       -> case GHC.Integer.Type.integerToInt ipv of n { DEFAULT ->
+                                          (# GHC.Int.I32# (GHC.Prim.narrow32Int# x#),
+                                             GHC.Int.I32#
+                                               (GHC.Prim.narrow32Int#
+                                                  (GHC.Prim.uncheckedIShiftRA# n s)) #) }
+                                       GHC.Types.True
+                                       -> case GHC.Integer.Type.integerToInt
+                                                 (GHC.Integer.Type.negateInteger
+                                                    ipv) of n { DEFAULT ->
+                                          (# GHC.Int.I32# (GHC.Prim.narrow32Int# x#),
+                                             GHC.Int.I32#
+                                               (GHC.Prim.narrow32Int#
+                                                  (GHC.Prim.negateInt#
+                                                     (GHC.Prim.uncheckedIShiftRA# n s))) #) } } }
+                                  GHC.Types.True
+                                  -> (# GHC.Int.I32# (GHC.Prim.narrow32Int# x#),
+                                        Utils.getSize2 #) } } } } }
+                        GHC.Base.Just a2
+                        -> case Utils.getSize1
+                           ret_ty (# GHC.Int.Int32, GHC.Int.Int32 #)
+                           of {} } }) -}
+5f8edc809adef01965c5ce35c20c7188
+  $wlvl ::
+    GHC.Prim.Double#
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> GHC.Prim.Double#
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> GHC.Types.Ordering
+  {- Arity: 4, HasNoCafRefs, Strictness: <L,U><L,1*U><L,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Double#
+                   ww1 :: [(GHC.Int.Int32, GHC.Int.Int32)]
+                   ww2 :: GHC.Prim.Double#[OneShot]
+                   ww3 :: [(GHC.Int.Int32, GHC.Int.Int32)][OneShot] ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<## ww ww2) of wild2 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==## ww ww2) of wild3 {
+                        GHC.Types.False -> GHC.Types.LT
+                        GHC.Types.True
+                        -> case GHC.Classes.$w$ccompare14
+                                  @ (GHC.Int.Int32, GHC.Int.Int32)
+                                  Utils.$s$fOrd(,)
+                                  ww1
+                                  ww3 of wild {
+                             DEFAULT -> GHC.Types.GT GHC.Types.GT -> GHC.Types.LT } }
+                   GHC.Types.True -> GHC.Types.GT }) -}
+55c37230fe9a0695b97109c1f72d46c8
+  dictAreaPoints ::
+    [[(GHC.Int.Int32, GHC.Int.Int32)]]
+    -> [(GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ polygon :: [[(GHC.Int.Int32, GHC.Int.Int32)]] ->
+                 GHC.List.$wunsafeTake
+                   @ (GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])
+                   10
+                   (Data.OldList.sortBy
+                      @ (GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])
+                      Utils.dictAreaPoints1
+                      (Utils.dictAreaPoints_go1
+                         (Utils.dictAreaPoints_go polygon (GHC.Types.[] @ GHC.Types.Double))
+                         polygon))) -}
+a9d71ddd7a18e54158087678c9c91315
+  dictAreaPoints1 ::
+    (GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])
+    -> (GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])
+    -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U(U),1*U)><S(SL),1*U(1*U(U),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: (GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])
+                   w1 :: (GHC.Types.Double,
+                          [(GHC.Int.Int32, GHC.Int.Int32)])[OneShot] ->
+                 case w of ww { (,) ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.D# ww4 ->
+                 case w1 of ww5 { (,) ww6 ww7 ->
+                 case ww6 of ww8 { GHC.Types.D# ww9 ->
+                 Utils.$wlvl ww4 ww2 ww9 ww7 } } } }) -}
+72382d11a57665903764d93357fcff1b
+  dictAreaPoints_go ::
+    [[(GHC.Int.Int32, GHC.Int.Int32)]]
+    -> [GHC.Types.Double] -> [GHC.Types.Double]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+ecbc6d77652230023787686a0790f981
+  dictAreaPoints_go1 ::
+    [GHC.Types.Double]
+    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
+    -> [(GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+582c0c79fab27e0c7022032e2d83d6e0
+  getHandW ::
+    OpenCV.Internal.Core.Types.Mat.Mat shape channels depth
+    -> [GHC.Int.Int32]
+  {- Arity: 1, Strictness: <L,1*U(U,U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ (shape :: OpenCV.TypeLevel.DS
+                                 [OpenCV.TypeLevel.DS GHC.TypeLits.Nat])
+                   @ (channels :: OpenCV.TypeLevel.DS GHC.TypeLits.Nat)
+                   @ (depth :: OpenCV.TypeLevel.DS *)
+                   image :: OpenCV.Internal.Core.Types.Mat.Mat shape channels depth ->
+                 case OpenCV.Internal.Core.Types.Mat.matInfo
+                        @ shape
+                        @ channels
+                        @ depth
+                        image of wild { OpenCV.Internal.Core.Types.Mat.MatInfo ds1 ds2 dt ->
+                 ds1 }) -}
+05d0c6fda5793214b422728d1ce57065
+  getImageFromEither :: Data.Either.Either a b -> b
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b eitherImage :: Data.Either.Either a b ->
+                 case eitherImage of wild {
+                   Data.Either.Left ds -> Utils.getImageFromEither1 @ b
+                   Data.Either.Right x -> x }) -}
+67a50c497f43f6d27ed924fde0042de8
+  getImageFromEither1 :: b
+  {- Strictness: b -}
+6d74a341bf8f4344592c24c63bba7750
+  getListOfPoints ::
+    [OpenCV.ImgProc.StructuralAnalysis.Contour]
+    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ vector :: [OpenCV.ImgProc.StructuralAnalysis.Contour] ->
+                 Utils.getListOfPoints_go
+                   vector
+                   (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)])) -}
+c08ea569e61844fcaaca2526695799fc
+  getListOfPoints_go ::
+    [OpenCV.ImgProc.StructuralAnalysis.Contour]
+    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
+    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+cb9974e5e583e051016f454e137e674a
+  getSize ::
+    GHC.Int.Int32
+    -> GHC.Int.Int32
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> GHC.Base.Maybe GHC.Types.Int
+    -> Linear.V2.V2 GHC.Int.Int32
+  {- Arity: 4, Strictness: <S,1*U(U)><S,1*U(U)><S,1*U><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ w :: GHC.Int.Int32
+                   w1 :: GHC.Int.Int32
+                   w2 :: GHC.Base.Maybe GHC.Types.Int
+                   w3 :: GHC.Base.Maybe GHC.Types.Int ->
+                 case w of ww { GHC.Int.I32# ww1 ->
+                 case w1 of ww2 { GHC.Int.I32# ww3 ->
+                 case Utils.$wgetSize ww1 ww3 w2 w3 of ww4 { (#,#) ww5 ww6 ->
+                 Linear.V2.V2 @ GHC.Int.Int32 ww5 ww6 } } }) -}
+594f971ddd48510c84f0947fb7e9f4fe
+  getSize1 :: Linear.V2.V2 GHC.Int.Int32
+  {- Strictness: b -}
+2794bdf55bff608f95ec10755049e4b0
+  getSize2 :: GHC.Int.Int32
+  {- HasNoCafRefs, Unfolding: (GHC.Int.I32# 0) -}
+a3772b15c23391511a42edd353005557
+  getSize3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 0) -}
+dd9c7987ed15f11ac9f52d3f5338f32b
+  getSize4 :: GHC.Types.Int
+  {- Strictness: b -}
+"SPEC/Utils $fEq(,) @ Int32 @ Int32" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                               GHC.Int.Int32
+                                                     $dEq1 :: GHC.Classes.Eq GHC.Int.Int32
+  GHC.Classes.$fEq(,) @ GHC.Int.Int32 @ GHC.Int.Int32 $dEq $dEq1
+  = Utils.$s$fEq(,)
+"SPEC/Utils $fOrd(,) @ Int32 @ Int32" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                                (GHC.Int.Int32, GHC.Int.Int32)
+                                                      $dOrd :: GHC.Classes.Ord GHC.Int.Int32
+                                                      $dOrd1 :: GHC.Classes.Ord GHC.Int.Int32
+  GHC.Classes.$fOrd(,) @ GHC.Int.Int32
+                       @ GHC.Int.Int32
+                       $dEq
+                       $dOrd
+                       $dOrd1
+  = Utils.$s$fOrd(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
