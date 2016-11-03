@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-10-25 12:40:16.317224 UTC
+2016-11-03 16:23:55.672044 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib 7103
-  interface hash: d84d9049d2737a0847e9e0b615886094
-  ABI hash: 25c42819cfab5a0b0ca25cd88ed6c77d
-  export-list hash: 66bc866813f349b135c20dc4ddbd7697
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  interface hash: 776902ff0e5359bb71284e14e674f507
+  ABI hash: ee7c64e9bc3378b6f127adbe115edb9a
+  export-list hash: 1b6538a4b3bd87264962188ef7d854af
+  orphan hash: b60c5f42495a1700b2e7429cae30b0b3
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
   sig of: Nothing
   used TH splices: False
@@ -235,6 +235,23 @@ import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
   getListOfPoints 6d74a341bf8f4344592c24c63bba7750
 import  -/  vector-algorithms-0.7.0.1@vecto_2O3XZ6glbAwDmJCc3dC3Ee:Data.Vector.Algorithms.Intro 108378b1513929dc10e120d12ef7d1aa
 import  -/  vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector 512d7f6fa3b1d8745a1f7b6f5b8fd295
+5a510aadfff28eb499a74915cbd10161
+  $s$fShow(,)_$s$fShow(,)_$cshowList ::
+    [(GHC.Int.Int32, GHC.Int.Int32)] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: [(GHC.Int.Int32, GHC.Int.Int32)]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (GHC.Int.Int32, GHC.Int.Int32)
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ GHC.Int.Int32
+                      @ GHC.Int.Int32
+                      GHC.Int.$fShowInt32
+                      GHC.Int.$fShowInt32
+                      GHC.Show.shows18)
+                   eta
+                   eta1) -}
 5d5a1637d051c2eec32d1457f79c0fcd
   $scoerceMat2 ::
     Data.Proxy.Proxy ('OpenCV.TypeLevel.S 1)
@@ -272,6 +289,15 @@ cd75efe8b85d857b142243d041a079df
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U> -}
+"SPEC/Lib $fShow(,)_$cshowList @ Int32 @ Int32" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                            GHC.Int.Int32
+                                                                $dShow1 :: GHC.Show.Show
+                                                                             GHC.Int.Int32
+  GHC.Show.$fShow(,)_$cshowList @ GHC.Int.Int32
+                                @ GHC.Int.Int32
+                                $dShow
+                                $dShow1
+  = Lib.$s$fShow(,)_$s$fShow(,)_$cshowList
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

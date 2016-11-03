@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-03 12:56:39.774027 UTC
+2016-11-03 16:20:31.104097 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RightReceipt 7103
-  interface hash: 709a7acba3d28a4436e311a8a4543f01
+  interface hash: 2d3e71477e6458d36571bdecfe0243f1
   ABI hash: aa727a2c1bd9f601ca14f303fa848648
   export-list hash: fc5dd0e223bbcdebdc8151409fe91582
   orphan hash: 61b1b960f998890699ba44bbbbfb13fa
@@ -194,6 +194,7 @@ family instance modules: adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8:Data.Funct
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
 import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
 import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
 import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
 import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
