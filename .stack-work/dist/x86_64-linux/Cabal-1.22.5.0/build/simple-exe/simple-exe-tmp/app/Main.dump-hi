@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-03 16:21:08.470302 UTC
+2016-11-04 16:35:12.867931 UTC
 
 interface main@main:Main 7103
-  interface hash: fa2fcda699f072f2005bb32aa38d0d30
-  ABI hash: 6572c7d5b096fd308262d3991356c2f2
+  interface hash: 55d7bc4123c4bab1bad7b14a07fb39ba
+  ABI hash: cce1bf66ff0b4bc92dd4a9ab8aed1652
   export-list hash: 678d9fd2a420fc399f39c33b47bd0a52
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ad6182f675fd4d72aad24a42291179c2
@@ -201,13 +201,13 @@ import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString 4d7
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
-import  -/  simple-0.1.0.0@simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib ee7c64e9bc3378b6f127adbe115edb9a
-534ebaacf744af5e635d172a49e99b0d
+import  -/  simple-0.1.0.0@simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib e2bc99b4289fbe8222dc56991b80a29a
+80beab6b46d95c5089b1316bcaef1ba5
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.controller1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-c8dd906896ac3e0b4c87db06d30b0ac7
+422c0007783b63264bdc80a684601379
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)

@@ -24,8 +24,8 @@ import Linear.V2
 
 --controller :: IO (CV.Mat (CV.S '[CV.D, CV.D]) (CV.S 1) (CV.S Word8))
 controller = do
-	-- file <- B.readFile "/home/chuck/Documents/Working/OCR/ocrexperiments/python_image_processing/test/pics/IMG_0650.JPG"
-	file <- B.readFile "/home/chuck/Pictures/testingWithLetters.png"
+	file <- B.readFile "/home/chuck/Documents/Working/OCR/ocrexperiments/python_image_processing/test/pics/IMG_0650.JPG"
+	--file <- B.readFile "/home/chuck/Pictures/testingWithLetters.png"
 	img <- return $ CV.imdecode CV.ImreadGrayscale file
 	resized_little_img <- resizeImage img --little image for making a blur in and find the receipt
 	blurred_Image <- blurImage ((CV.exceptError $ M.coerceMat resized_little_img) :: M.Mat (CV.S '[ CV.D, CV.D]) (CV.S 1) (CV.S Word8))
@@ -35,6 +35,6 @@ controller = do
 	let listOfAreas = dictAreaPoints listOfPoints
 
 	--putStrLn (show (CV.contourArea (c :: Vector CV.Point2f)))
-	putStrLn (show (listOfAreas))
-	putStrLn (show (Data.List.map (* 0.02) (findReceipt listOfAreas)))
+	--putStrLn (show (listOfAreas))
+	putStrLn (show (findReceipt listOfAreas))
 	--putStrLn (show (t + z))--}

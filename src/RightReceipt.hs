@@ -28,9 +28,35 @@ getPerimeter (firstPoint : points) = getPerimeter' points firstPoint firstPoint 
 
 
 --findReceipt :: [(Double, [(Int32, Int32)])] -> [(Int32, Int32)]
-findReceipt :: [(Double, [(Int32, Int32)])] -> [Double]
-findReceipt areaPoints = reverse (findPerimeter (fromList areaPoints))
+--findReceipt :: [(Double, [(Int32, Int32)])] -> [[(Int32, Int32)]]
+--findReceipt :: [(Double, [(Int32, Int32)])] -> Int
+--findReceipt :: [(Double, [(Int32, Int32)])] -> [Double]
+--findReceipt areaPoints = findAllPolyDp (getListOfPoints mapAreaPoints) epsilons
+--findReceipt areaPoints = findAllPolyDp [[(1,4),(2,3),(4,2),(6,2),(8,3),(9,5)], [(1,4),(2,3),(4,2),(6,2),(8,3),(9,5)]] [(18*0.02), (18*0.02)]
+--findReceipt areaPoints = getListOfPoints mapAreaPoints
 
+--findReceipt areaPoints = findAllPolyDp [(getListOfPoints mapAreaPoints) !! 2, (getListOfPoints mapAreaPoints) !! 3, (getListOfPoints mapAreaPoints) !! 4, (getListOfPoints mapAreaPoints) !! 5, (getListOfPoints mapAreaPoints) !! 6, (getListOfPoints mapAreaPoints) !! 7, (getListOfPoints mapAreaPoints) !! 8] [epsilons !! 2, epsilons !! 3, epsilons !! 4, epsilons !! 5, epsilons !! 6, epsilons !! 7, epsilons !! 8]
+
+--findReceipt areaPoints = (getListOfPoints mapAreaPoints) !! 3
+--findReceipt areaPoints = epsilons !! 3
+--findReceipt areaPoints = getPerimeter ((getListOfPoints mapAreaPoints) !! 3) * 0.02
+findReceipt areaPoints = approxPolyDP ((getListOfPoints mapAreaPoints) !! 8)  (epsilons !! 8)
+
+--findReceipt areaPoints = findAllPolyDp [last (getListOfPoints mapAreaPoints), (getListOfPoints mapAreaPoints) !! 1 ] [last epsilons, epsilons !! 1]
+--findReceipt areaPoints = length epsilons
+--findReceipt areaPoints = epsilons
+	where
+		mapAreaPoints = fromList areaPoints
+		epsilons = findEpsilon (reverse (findPerimeter mapAreaPoints))		
+
+findEpsilon :: [Double] -> [Double]
+findEpsilon xs = Data.List.map (* 0.02) xs
+
+findAllPolyDp :: [[(Int32, Int32)]] -> [Double] -> [[(Int32, Int32)]]
+findAllPolyDp listOfPoints epsilons = Data.List.map (uncurry approxPolyDP) (zip listOfPoints epsilons)
+
+getListOfPoints :: Map Double [(Int32, Int32)] -> [[(Int32, Int32)]]
+getListOfPoints areaPoints = Data.Map.foldl (\acc x -> x : acc) [] areaPoints
 
 approxPolyDP :: [(Int32, Int32)] -> Double -> [(Int32, Int32)] --List of points -> Epsilon (0.02 * perimeter) -> List of points
 approxPolyDP pointList epsi = approxPolyDP' pointList pointList epsi (linkPoint : []) (rightPoint : []) []
@@ -41,10 +67,9 @@ approxPolyDP pointList epsi = approxPolyDP' pointList pointList epsi (linkPoint 
 		approxPolyDP' :: [(Int32, Int32)] -> [(Int32, Int32)] -> Double -> [(Int32, Int32)] -> [(Int32, Int32)] -> [(Int32, Int32)] -> [(Int32, Int32)]
 		approxPolyDP' crrntPointList pointList epsi open [] final = final ++ open
 		approxPolyDP' crrntPointList pointList epsi open closed final
-			| (length crrntPointList) == 1 = approxPolyDP' [] pointList epsi (fromBToA open closed) [] final
-			| (length crrntPointList) == 2 = approxPolyDP' pointListTail pointList epsi (fromBToA open closed) [farthestPointToLastPoint] final
-			| pointLineDist > epsi 		   = approxPolyDP' pointListInitTail pointList epsi open (closed ++ [farthestPointToLine]) final 
-			| otherwise            		   = approxPolyDP' pointListTail pointList epsi (fromBToA open closed) [farthestPointToLastPoint] final
+			| (length crrntPointList) == 1 							= approxPolyDP' [] pointList epsi (fromBToA open closed) [] final
+			| (length crrntPointList) == 2 || pointLineDist <= epsi = approxPolyDP' pointListTail pointList epsi (fromBToA open closed) [farthestPointToLastPoint] final
+			| otherwise									   	   	    = approxPolyDP' pointListInitTail pointList epsi open (closed ++ [farthestPointToLine]) final 			
 			where				
 				farthestPointToLine = findFarthestPointToLine crrntPointList [(last open), (last closed)] (0, 0) 0
 				farthestPointToLastPoint = findFarthestPoint pointListTail (last closed) (0, 0) 0

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-03 16:20:31.104097 UTC
+2016-11-04 16:35:11.224983 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RightReceipt 7103
-  interface hash: 2d3e71477e6458d36571bdecfe0243f1
-  ABI hash: aa727a2c1bd9f601ca14f303fa848648
+  interface hash: 186d70534212afc1506a2ea8a4fde4c8
+  ABI hash: b3c96f7dc3cdfc5b385731f373708358
   export-list hash: fc5dd0e223bbcdebdc8151409fe91582
   orphan hash: 61b1b960f998890699ba44bbbbfb13fa
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
@@ -198,6 +198,7 @@ import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
 import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
 import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
 import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Float e532d434ec2447d809887c0fca1d78a5
 import  -/  base-4.8.2.0:GHC.Int 28d8a9f7cfc272358fb4631d98c579ce
@@ -283,21 +284,125 @@ b5e58cc3655fa26675828a254930dd2d
     -> [(GHC.Types.Double, a)]
     -> Data.Map.Base.Map GHC.Types.Double a
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
-3f9c345bd561ef54fba7644f52adbc11
+c9cfdcc0c67963c8534187e8e9a7a600
   findReceipt ::
     [(GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])]
-    -> [GHC.Types.Double]
-  {- Arity: 1, Strictness: <S,1*U>,
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+  {- Arity: 1, Strictness: <L,1*U>,
      Unfolding: (\ areaPoints :: [(GHC.Types.Double,
                                    [(GHC.Int.Int32, GHC.Int.Int32)])] ->
-                 GHC.List.reverse1
-                   @ GHC.Types.Double
-                   (RightReceipt.findReceipt_go10
-                      (GHC.Types.[] @ GHC.Types.Double)
-                      (RightReceipt.$sfromList
-                         @ [(GHC.Int.Int32, GHC.Int.Int32)]
-                         areaPoints))
-                   (GHC.Types.[] @ GHC.Types.Double)) -}
+                 let {
+                   mapAreaPoints :: Data.Map.Base.Map
+                                      GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
+                   = RightReceipt.$sfromList
+                       @ [(GHC.Int.Int32, GHC.Int.Int32)]
+                       areaPoints
+                 } in
+                 let {
+                   pointList :: [(GHC.Int.Int32, GHC.Int.Int32)]
+                   = GHC.List.$w!!
+                       @ [(GHC.Int.Int32, GHC.Int.Int32)]
+                       (RightReceipt.findReceipt_go2
+                          (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)])
+                          mapAreaPoints)
+                       8
+                 } in
+                 let {
+                   sorted :: [(GHC.Int.Int32, GHC.Int.Int32)]
+                   = Data.OldList.sortBy
+                       @ (GHC.Int.Int32, GHC.Int.Int32)
+                       RightReceipt.findReceipt2
+                       pointList
+                 } in
+                 let {
+                   a :: (GHC.Int.Int32, GHC.Int.Int32)
+                   = case sorted of wild {
+                       [] -> GHC.List.badHead @ (GHC.Int.Int32, GHC.Int.Int32)
+                       : x ds1 -> x }
+                 } in
+                 RightReceipt.findReceipt_approxPolyDP'
+                   pointList
+                   pointList
+                   (GHC.List.$w!!
+                      @ GHC.Types.Double
+                      (GHC.Base.map
+                         @ GHC.Types.Double
+                         @ GHC.Types.Double
+                         RightReceipt.findReceipt1
+                         (GHC.List.reverse1
+                            @ GHC.Types.Double
+                            (RightReceipt.findReceipt_go10
+                               (GHC.Types.[] @ GHC.Types.Double)
+                               mapAreaPoints)
+                            (GHC.Types.[] @ GHC.Types.Double)))
+                      8)
+                   (GHC.Types.:
+                      @ (GHC.Int.Int32, GHC.Int.Int32)
+                      a
+                      (GHC.Types.[] @ (GHC.Int.Int32, GHC.Int.Int32)))
+                   (GHC.Types.:
+                      @ (GHC.Int.Int32, GHC.Int.Int32)
+                      (RightReceipt.findReceipt_go1
+                         (GHC.Types.:
+                            @ (GHC.Int.Int32, GHC.Int.Int32)
+                            a
+                            (GHC.Types.:
+                               @ (GHC.Int.Int32, GHC.Int.Int32)
+                               (RightReceipt.findReceipt_go
+                                  sorted
+                                  (GHC.List.lastError @ (GHC.Int.Int32, GHC.Int.Int32)))
+                               (GHC.Types.[] @ (GHC.Int.Int32, GHC.Int.Int32))))
+                         (GHC.List.lastError @ (GHC.Int.Int32, GHC.Int.Int32)))
+                      (GHC.Types.[] @ (GHC.Int.Int32, GHC.Int.Int32)))
+                   (GHC.Types.[] @ (GHC.Int.Int32, GHC.Int.Int32))) -}
+a58e768e6beea9b64669f03fb8b37681
+  findReceipt1 :: GHC.Types.Double -> GHC.Types.Double
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: GHC.Types.Double ->
+                 case ds of wild { GHC.Types.D# x ->
+                 GHC.Types.D# (GHC.Prim.*## x 2.0e-2) }) -}
+3e94b3b27f936f21e471ea3d9646215f
+  findReceipt2 ::
+    (GHC.Int.Int32, GHC.Int.Int32)
+    -> (GHC.Int.Int32, GHC.Int.Int32) -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ w3 :: (GHC.Int.Int32, GHC.Int.Int32)
+                   w4 :: (GHC.Int.Int32, GHC.Int.Int32)[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 case w4 of ww3 { (,) ww4 ww5 ->
+                 case ww1 of wild { GHC.Int.I32# a1 ->
+                 case ww4 of wild1 { GHC.Int.I32# b1 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a1 b1) of wild2 {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# a1 b1) of wild3 {
+                        GHC.Types.False -> GHC.Types.GT
+                        GHC.Types.True -> GHC.Int.$fOrdInt32_$ccompare ww2 ww5 }
+                   GHC.Types.True -> GHC.Types.LT } } } } }) -}
+95a0272de20576205a31170bc18fd927
+  findReceipt_approxPolyDP' ::
+    [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> GHC.Types.Double
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> [(GHC.Int.Int32, GHC.Int.Int32)]
+  {- Arity: 6, Strictness: <L,U><L,U><L,U(U)><L,U><S,1*U><S,1*U> -}
+e5a671e92fd975b9b5d04817b239aa5d
+  findReceipt_go ::
+    [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> (GHC.Int.Int32, GHC.Int.Int32) -> (GHC.Int.Int32, GHC.Int.Int32)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U)> -}
+adc88a33c9560ccd318679cbce640b84
+  findReceipt_go1 ::
+    [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> (GHC.Int.Int32, GHC.Int.Int32) -> (GHC.Int.Int32, GHC.Int.Int32)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U(U,U)> -}
 8886d7bf0787c993861417c34f8673ad
   findReceipt_go10 ::
     [GHC.Types.Double]
@@ -305,6 +410,13 @@ b5e58cc3655fa26675828a254930dd2d
          GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
     -> [GHC.Types.Double]
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+e78a19a452e67254af3d1bfda71e5e59
+  findReceipt_go2 ::
+    [[(GHC.Int.Int32, GHC.Int.Int32)]]
+    -> Data.Map.Base.Map
+         GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
+    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
 "SPEC/RightReceipt fromList @ Double _" [ALWAYS] forall @ a
                                                         $dOrd :: GHC.Classes.Ord GHC.Types.Double
   Data.Map.Base.fromList @ GHC.Types.Double @ a $dOrd
