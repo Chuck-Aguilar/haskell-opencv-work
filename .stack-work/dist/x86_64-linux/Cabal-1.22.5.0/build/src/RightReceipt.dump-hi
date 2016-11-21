@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-04 16:35:11.224983 UTC
+2016-11-14 16:17:39.627423 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RightReceipt 7103
-  interface hash: 186d70534212afc1506a2ea8a4fde4c8
-  ABI hash: b3c96f7dc3cdfc5b385731f373708358
+  interface hash: e98ebbf0d9342508302a263441375d1c
+  ABI hash: 255a44fa896236842004de7c79ac9f5e
   export-list hash: fc5dd0e223bbcdebdc8151409fe91582
   orphan hash: 61b1b960f998890699ba44bbbbfb13fa
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
@@ -13,7 +13,7 @@ interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RightReceipt 7103
   where
 exports:
   RightReceipt.findReceipt
-module dependencies:
+module dependencies: ConvexHull
 package dependencies: QuickCheck-2.8.2@Quick_6TxL5Cx3o2p0HsyT59KWiD
                       StateVar-1.1.0.4@State_IOvB80WkYNkEizdt0JVpzy
                       adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8
@@ -212,6 +212,9 @@ import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
 import  -/  linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2 5c727ef3668ea96ff4edd21393f561f0
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
+import  -/  ConvexHull 1632b0ec6e0efa0b9b03eaeb827f673a
+  exports: 5a106fd7db33c9820a85cc3d924e307d
+  convexHull ad21a3fef117368190adb380d1675561
 73c5112bafc06683833a1f0f87b3a23a
   $sfromList ::
     [(GHC.Types.Double, a)] -> Data.Map.Base.Map GHC.Types.Double a
@@ -284,7 +287,7 @@ b5e58cc3655fa26675828a254930dd2d
     -> [(GHC.Types.Double, a)]
     -> Data.Map.Base.Map GHC.Types.Double a
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
-c9cfdcc0c67963c8534187e8e9a7a600
+3be27b5580741628fc195824cdf9ec10
   findReceipt ::
     [(GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])]
     -> [(GHC.Int.Int32, GHC.Int.Int32)]
@@ -300,12 +303,13 @@ c9cfdcc0c67963c8534187e8e9a7a600
                  } in
                  let {
                    pointList :: [(GHC.Int.Int32, GHC.Int.Int32)]
-                   = GHC.List.$w!!
-                       @ [(GHC.Int.Int32, GHC.Int.Int32)]
-                       (RightReceipt.findReceipt_go2
-                          (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)])
-                          mapAreaPoints)
-                       8
+                   = ConvexHull.convexHull
+                       (GHC.List.$w!!
+                          @ [ConvexHull.R2]
+                          (RightReceipt.findReceipt_go2
+                             (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)])
+                             mapAreaPoints)
+                          3)
                  } in
                  let {
                    sorted :: [(GHC.Int.Int32, GHC.Int.Int32)]
@@ -335,7 +339,7 @@ c9cfdcc0c67963c8534187e8e9a7a600
                                (GHC.Types.[] @ GHC.Types.Double)
                                mapAreaPoints)
                             (GHC.Types.[] @ GHC.Types.Double)))
-                      8)
+                      3)
                    (GHC.Types.:
                       @ (GHC.Int.Int32, GHC.Int.Int32)
                       a

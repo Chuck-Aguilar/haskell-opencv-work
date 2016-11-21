@@ -1,116 +1,5 @@
 Preprocessing library simple-0.1.0.0...
-[6 of 7] Compiling RightReceipt     ( src/RightReceipt.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.o )
-
-src/RightReceipt.hs:3:5: Warning: Tab character
-
-src/RightReceipt.hs:20:1: Warning: Tab character
-
-src/RightReceipt.hs:21:1: Warning: Tab character
-
-src/RightReceipt.hs:22:1: Warning: Tab character
-
-src/RightReceipt.hs:23:1: Warning: Tab character
-
-src/RightReceipt.hs:48:1: Warning: Tab character
-
-src/RightReceipt.hs:49:1: Warning: Tab character
-
-src/RightReceipt.hs:50:1: Warning: Tab character
-
-src/RightReceipt.hs:50:79: Warning: Tab character
-
-src/RightReceipt.hs:63:1: Warning: Tab character
-
-src/RightReceipt.hs:64:1: Warning: Tab character
-
-src/RightReceipt.hs:65:1: Warning: Tab character
-
-src/RightReceipt.hs:66:1: Warning: Tab character
-
-src/RightReceipt.hs:67:1: Warning: Tab character
-
-src/RightReceipt.hs:68:1: Warning: Tab character
-
-src/RightReceipt.hs:69:1: Warning: Tab character
-
-src/RightReceipt.hs:70:1: Warning: Tab character
-
-src/RightReceipt.hs:70:56: Warning: Tab character
-
-src/RightReceipt.hs:71:1: Warning: Tab character
-
-src/RightReceipt.hs:72:1: Warning: Tab character
-
-src/RightReceipt.hs:72:36: Warning: Tab character
-
-src/RightReceipt.hs:72:108: Warning: Tab character
-
-src/RightReceipt.hs:72:116: Warning: Tab character
-
-src/RightReceipt.hs:72:219: Warning: Tab character
-
-src/RightReceipt.hs:73:1: Warning: Tab character
-
-src/RightReceipt.hs:73:30: Warning: Tab character
-
-src/RightReceipt.hs:74:1: Warning: Tab character
-
-src/RightReceipt.hs:75:1: Warning: Tab character
-
-src/RightReceipt.hs:76:1: Warning: Tab character
-
-src/RightReceipt.hs:77:1: Warning: Tab character
-
-src/RightReceipt.hs:78:1: Warning: Tab character
-
-src/RightReceipt.hs:79:1: Warning: Tab character
-
-src/RightReceipt.hs:83:1: Warning: Tab character
-
-src/RightReceipt.hs:84:1: Warning: Tab character
-
-src/RightReceipt.hs:89:1: Warning: Tab character
-
-src/RightReceipt.hs:90:1: Warning: Tab character
-
-src/RightReceipt.hs:91:1: Warning: Tab character
-
-src/RightReceipt.hs:101:1: Warning: Tab character
-
-src/RightReceipt.hs:102:1: Warning: Tab character
-
-src/RightReceipt.hs:102:20: Warning: Tab character
-
-src/RightReceipt.hs:108:1: Warning: Tab character
-
-src/RightReceipt.hs:109:1: Warning: Tab character
-
-src/RightReceipt.hs:109:20: Warning: Tab character
-
-src/RightReceipt.hs:110:1: Warning: Tab character
-
-src/RightReceipt.hs:110:14: Warning: Tab character
-
-src/RightReceipt.hs:111:1: Warning: Tab character
-
-src/RightReceipt.hs:111:86: Warning: Tab character
-
-src/RightReceipt.hs:112:1: Warning: Tab character
-
-src/RightReceipt.hs:112:69: Warning: Tab character
-
-src/RightReceipt.hs:115:44: Warning: Tab character
-
-src/RightReceipt.hs:115:68: Warning: Tab character
-
-src/RightReceipt.hs:118:1: Warning: Tab character
-
-src/RightReceipt.hs:119:1: Warning: Tab character
-
-src/RightReceipt.hs:120:1: Warning: Tab character
-
-src/RightReceipt.hs:121:1: Warning: Tab character
-[7 of 7] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o ) [RightReceipt changed]
+[8 of 8] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o )
 
 src/Lib.hs:27:1: Warning: Tab character
 
@@ -130,13 +19,13 @@ src/Lib.hs:34:1: Warning: Tab character
 
 src/Lib.hs:35:1: Warning: Tab character
 
-src/Lib.hs:37:1: Warning: Tab character
-
-src/Lib.hs:38:1: Warning: Tab character
-
 src/Lib.hs:39:1: Warning: Tab character
 
 src/Lib.hs:40:1: Warning: Tab character
+
+src/Lib.hs:41:1: Warning: Tab character
+
+src/Lib.hs:42:1: Warning: Tab character
 In-place registering simple-0.1.0.0...
 Preprocessing executable 'simple-exe' for simple-0.1.0.0...
 [1 of 1] Compiling Main             ( app/Main.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/Main.o ) [Lib changed]

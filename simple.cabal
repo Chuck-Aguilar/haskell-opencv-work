@@ -27,6 +27,7 @@ library
                        TypeOperators
   exposed-modules:     Lib
                      , CannyImage
+                     , ConvexHull
                      , FindContours
                      , BlurImage
                      , ResizeImage

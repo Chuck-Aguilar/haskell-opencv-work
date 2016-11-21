@@ -8,8 +8,8 @@ import qualified Data.ByteString as B
 
 main :: IO ()
 main = do
-	controller
-    {-- test <- controller
+	--controller
+    test <- controller
     CV.withWindow "test" $ \window -> do
         CV.imshow window test 
-        void $ CV.waitKey 0 --}
+        void $ CV.waitKey 0

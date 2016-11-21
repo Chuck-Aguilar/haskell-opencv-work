@@ -23,7 +23,8 @@ import GHC.Int (Int32)
 
 
 canny :: M.Mat ('S '[h0, w0]) ('S 1) ('S Word8) -> CV.CvExcept (M.Mat ('S '[h0, w0]) ('S 1) ('S Word8)) 
-canny image = CV.canny 75 200 Nothing CV.CannyNormL1 image
+--canny image = CV.canny 75 200 Nothing CV.CannyNormL1 image
+canny image = CV.canny 10 200 Nothing CV.CannyNormL1 image
 
 cannyImage :: M.Mat ('S '[h0, w0]) ('S 1) ('S Word8) -> IO (M.Mat ('S '[h0, w0]) ('S 1) ('S Word8))
 cannyImage image = do

@@ -3,6 +3,7 @@ module RightReceipt
     	findReceipt
     ) where
 
+import ConvexHull
 import Control.Monad ( void )
 import qualified OpenCV as CV
 import qualified OpenCV.Internal.Core.Types.Mat as M
@@ -40,7 +41,15 @@ getPerimeter (firstPoint : points) = getPerimeter' points firstPoint firstPoint 
 --findReceipt areaPoints = (getListOfPoints mapAreaPoints) !! 3
 --findReceipt areaPoints = epsilons !! 3
 --findReceipt areaPoints = getPerimeter ((getListOfPoints mapAreaPoints) !! 3) * 0.02
-findReceipt areaPoints = approxPolyDP ((getListOfPoints mapAreaPoints) !! 8)  (epsilons !! 8)
+{- *** BUT THIS IS JUST FOR RECEIPTS; WITH CHARACTERS DON'T USE CONVEXHULL *** -}
+findReceipt areaPoints = approxPolyDP (convexHull ((getListOfPoints mapAreaPoints) !! 3))  (epsilons !! 3) 
+--findReceipt areaPoints = approxPolyDP (convexHull ((getListOfPoints mapAreaPoints) !! 3))  1 
+--findReceipt areaPoints =  head (findFarthestTwoPoints ((getListOfPoints mapAreaPoints) !! 3) [(0,0),(0,0)] 0)
+--findReceipt areaPoints =  pointToLineDist (90,298) (84,349) (64, 315)
+--findReceipt areaPoints =  (take (fromJust (elemIndex (64, 315) (convexHull ((getListOfPoints mapAreaPoints) !! 3)))) (convexHull ((getListOfPoints mapAreaPoints) !! 3))) ++ [(64, 315)]
+--findReceipt areaPoints =  findFarthestPointToLine (convexHull ((getListOfPoints mapAreaPoints) !! 3)) [(90,298),(84,349)] (0,0) 0
+--findReceipt areaPoints = convexHull ((getListOfPoints mapAreaPoints) !! 3)
+--findReceipt areaPoints = epsilons !! 3
 
 --findReceipt areaPoints = findAllPolyDp [last (getListOfPoints mapAreaPoints), (getListOfPoints mapAreaPoints) !! 1 ] [last epsilons, epsilons !! 1]
 --findReceipt areaPoints = length epsilons
@@ -61,13 +70,14 @@ getListOfPoints areaPoints = Data.Map.foldl (\acc x -> x : acc) [] areaPoints
 approxPolyDP :: [(Int32, Int32)] -> Double -> [(Int32, Int32)] --List of points -> Epsilon (0.02 * perimeter) -> List of points
 approxPolyDP pointList epsi = approxPolyDP' pointList pointList epsi (linkPoint : []) (rightPoint : []) []
 	where
+		--points     = findFarthestTwoPoints pointList [(0,0),(0,0)] 0
 		points     = findLeftRightPoints pointList
 		linkPoint  = head points
 		rightPoint = last points
 		approxPolyDP' :: [(Int32, Int32)] -> [(Int32, Int32)] -> Double -> [(Int32, Int32)] -> [(Int32, Int32)] -> [(Int32, Int32)] -> [(Int32, Int32)]
 		approxPolyDP' crrntPointList pointList epsi open [] final = final ++ open
 		approxPolyDP' crrntPointList pointList epsi open closed final
-			| (length crrntPointList) == 1 							= approxPolyDP' [] pointList epsi (fromBToA open closed) [] final
+			| (length crrntPointList) == 1 							= approxPolyDP' [] pointList epsi open [] final
 			| (length crrntPointList) == 2 || pointLineDist <= epsi = approxPolyDP' pointListTail pointList epsi (fromBToA open closed) [farthestPointToLastPoint] final
 			| otherwise									   	   	    = approxPolyDP' pointListInitTail pointList epsi open (closed ++ [farthestPointToLine]) final 			
 			where				
@@ -105,7 +115,7 @@ findFarthestPoint (currntPoint : pointList) firstPoint finalPoint dist
 findFarthestTwoPoints :: [(Int32, Int32)] -> [(Int32, Int32)] -> Double -> [(Int32, Int32)] --List of Points -> [(Point, Point)] -> distance -> [(Point, Point)]
 findFarthestTwoPoints [] finalList dist = finalList
 findFarthestTwoPoints (currntPoint : pointList) finalList dist
-	| newDist >= dist = findFarthestTwoPoints pointList [currntPoint, farthestPoint] newDist
+	| newDist > dist = findFarthestTwoPoints pointList [currntPoint, farthestPoint] newDist
 	| otherwise		  = findFarthestTwoPoints pointList finalList dist
 	where		
 		farthestPoint = findFarthestPoint pointList currntPoint currntPoint 0		

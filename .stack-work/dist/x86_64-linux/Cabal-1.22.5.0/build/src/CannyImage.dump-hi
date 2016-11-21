@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-10-25 12:35:41.967595 UTC
+2016-11-14 16:38:05.702092 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:CannyImage 7103
-  interface hash: 493234e386b0c18066a181949d063b64
-  ABI hash: 550cbb0a5de0a3b7f40a62d62a225818
+  interface hash: bfc344b838bc7631e2458baae5095a14
+  ABI hash: ade454cf8198395de96e6ce7d4a2675d
   export-list hash: 8cd337604131fb0eb7b00d80a2fda89f
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 9522f2e7d836bf33cf899b38113e6a7f
@@ -213,7 +213,7 @@ import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Exception 
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.TypeLevel 3086e176dc0d51d63cf12f8ac704765e
 import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
   exports: 0a04ff5e9ffd8025faa2d6c44be78a68
-636c6349d855372a83b8b89dbf46c3d1
+eb257f2dc2d9542c8dc0a7876c3f4a22
   cannyImage ::
     OpenCV.Internal.Core.Types.Mat.Mat
       ('OpenCV.TypeLevel.S '[h0, w0])
@@ -239,7 +239,7 @@ import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
                                   ('OpenCV.TypeLevel.S '[h0, w0])
                                   ('OpenCV.TypeLevel.S 1)
                                   ('OpenCV.TypeLevel.S GHC.Word.Word8)>_R)) -}
-67479346abca11cc670d29ffe33c2d08
+aa31308534e100b417576a8374a7188e
   cannyImage1 ::
     OpenCV.Internal.Core.Types.Mat.Mat
       ('OpenCV.TypeLevel.S '[h0, w0])
@@ -282,9 +282,9 @@ import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
 8122867aa1f193be3f5b747e7e14624f
   cannyImage3 :: GHC.Types.Double
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 200.0) -}
-c372b49e49f9635d1f9d7d81814a0adf
+b0f0dcd9db6583843520083f4026d6c4
   cannyImage4 :: GHC.Types.Double
-  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 75.0) -}
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 10.0) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
