@@ -24,14 +24,12 @@ readDstPt pos = dstContours !! pos
 writePt :: Point -> [Point]
 writePt point = dstContours ++ [point]
 
---findFarthestPoints :: Int -> Double -> Double -> Double -> Range -> Int -> Int -> Point -> (Range, Point, Bool)
---findFarthestPoints :: Int -> Double -> Double -> Double -> Range -> Int -> Int -> Point -> [Int] -> [Int]
-findFarthestPoints iters dist max_dist epsi right_slice count pos start_pt acc
+findFarthestPoints :: Int -> Double -> Double -> Double -> Range -> Int -> Int -> Point -> (Range, Point, Bool)
+findFarthestPoints iters dist max_dist epsi right_slice count pos start_pt
         | iters == 0 = (right_slice, start_pt, (max_dist <= epsi))
-        -- | iters == 0 = acc
-        | otherwise  = findFarthestPoints (iters - 1) dist (fst nestedFunc) epsi (snd nestedFunc) count cntPos (readPt cntPos) (cntPos : acc)
+        | otherwise  = findFarthestPoints (iters - 1) dist (fst nestedFunc) epsi (snd nestedFunc) count cntPos (readPt cntPos)
         where
-                cntPos = cntPosFunc pos right_slice count
+                cntPos     = cntPosFunc pos right_slice count
                 nestedFunc = findFarthestPointsSecond count 1 (readPt 1) max_dist start_pt right_slice
                   
 cntPosFunc :: Int -> Range -> Int -> Int             
