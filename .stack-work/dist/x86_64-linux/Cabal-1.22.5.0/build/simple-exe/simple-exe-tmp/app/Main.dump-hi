@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-21 15:33:15.468823 UTC
+2016-11-29 09:55:05.569548 UTC
 
 interface main@main:Main 7103
-  interface hash: 4c042b26e73f3f0577170bcf43587bfb
-  ABI hash: bae947a6db6a8675b557b7caa6334850
+  interface hash: 37bdcd81f19bdeb5262cc9f9a13f6307
+  ABI hash: d490fe80ffe432371ea161059fa84174
   export-list hash: 678d9fd2a420fc399f39c33b47bd0a52
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: ad6182f675fd4d72aad24a42291179c2
@@ -196,97 +196,25 @@ family instance modules: adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8:Data.Funct
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
 import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
-import  -/  base-4.8.2.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString 4d711736b0a2cbe42c3b3c3f195a9aad
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
-import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.HighGui f8944e0971084c0bd2ee205987a576c4
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
-import  -/  simple-0.1.0.0@simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib f19c8da0dd9c7986a46a0df09e295710
-2ca722e22a2a8ce82d53d272cde386a9
+import  -/  simple-0.1.0.0@simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib dc405194b10c94235c4ed058a850067b
+68856d87b26e1d457986341901e7421b
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
-                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-ea3fa0d30f566bd0e8d5faca104fc31f
+                Lib.controller1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+152fbf4d7b0aa61e1dd4725be87fc806
   main1 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
-  {- Arity: 1, Strictness: <L,U>,
-     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case Lib.controller1 s of ds1 { (#,#) ipv ipv1 ->
-                 Control.Exception.Base.bracket1
-                   @ OpenCV.HighGui.Window
-                   @ ()
-                   @ ()
-                   Main.main2
-                     `cast`
-                   (Sym (GHC.Types.NTCo:IO[0] <OpenCV.HighGui.Window>_R))
-                   OpenCV.HighGui.destroyWindow1
-                     `cast`
-                   (<OpenCV.HighGui.Window>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
-                   (\ window :: OpenCV.HighGui.Window[OneShot]
-                      eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                    case window of wild { OpenCV.HighGui.Window dt dt1 dt2 ->
-                    case ipv1
-                           `cast`
-                         (Trans
-                              (OpenCV.Internal.Core.Types.Mat.NTCo:Mat[0]
-                                   <'OpenCV.TypeLevel.S
-                                      '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D]>_P
-                                   <'OpenCV.TypeLevel.S 1>_P
-                                   <'OpenCV.TypeLevel.S GHC.Word.Word8>_P)
-                              (GHC.ForeignPtr.ForeignPtr
-                                 (UnivCo opt_phantom phantom (OpenCV.Internal.C.Types.C
-                                                                (OpenCV.Internal.Core.Types.Mat.Mat
-                                                                   ('OpenCV.TypeLevel.S
-                                                                      '['OpenCV.TypeLevel.D,
-                                                                        'OpenCV.TypeLevel.D])
-                                                                   ('OpenCV.TypeLevel.S 1)
-                                                                   ('OpenCV.TypeLevel.S
-                                                                      GHC.Word.Word8))) OpenCV.Internal.C.Types.C'Mat))_R) of wild1 { GHC.ForeignPtr.ForeignPtr fo ds2 ->
-                    case {__pkg_ccall_GC opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R inline_c_OpenCV_HighGui_6_940dcb370c787776fef1ce37b44d4eb5e8e1fd3e GHC.Prim.Addr#
-                                                                                                                                                      -> GHC.Prim.Addr#
-                                                                                                                                                      -> GHC.Prim.State#
-                                                                                                                                                           GHC.Prim.RealWorld
-                                                                                                                                                      -> (# GHC.Prim.State#
-                                                                                                                                                              GHC.Prim.RealWorld #)}
-                           dt
-                           fo
-                           eta of wild2 { (##) ds ->
-                    case GHC.Prim.touch#
-                           @ GHC.ForeignPtr.ForeignPtrContents
-                           ds2
-                           ds of s' { DEFAULT ->
-                    case {__pkg_ccall_GC opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R inline_c_OpenCV_HighGui_3_fb37cd90c9f3b163f9aca91658c8817f9bd8cd3b GHC.Prim.Int#
-                                                                                                                                                      -> GHC.Prim.State#
-                                                                                                                                                           GHC.Prim.RealWorld
-                                                                                                                                                      -> (# GHC.Prim.State#
-                                                                                                                                                              GHC.Prim.RealWorld,
-                                                                                                                                                            GHC.Prim.Int# #)}
-                           0
-                           s' of wild4 { (#,#) ds3 ds4 ->
-                    (# ds3, GHC.Tuple.() #) } } } } })
-                     `cast`
-                   (<OpenCV.HighGui.Window>_R ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
-                   ipv }) -}
-eb704b24867a9047f7fbd20c51bb4e98
-  main2 ::
-    GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, OpenCV.HighGui.Window #)
-  {- Arity: 1, Unfolding: (OpenCV.HighGui.makeWindow1 Main.main3) -}
-4a7817ddfd0038b0db17354078b55074
-  main3 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "test"#) -}
-531a66de9a60cfc4b43129d0ab52120e
-  main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+                   Lib.controller1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

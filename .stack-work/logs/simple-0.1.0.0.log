@@ -1,8 +1,6 @@
 Preprocessing library simple-0.1.0.0...
 [8 of 8] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o )
 
-src/Lib.hs:27:1: Warning: Tab character
-
 src/Lib.hs:28:1: Warning: Tab character
 
 src/Lib.hs:29:1: Warning: Tab character
@@ -18,6 +16,10 @@ src/Lib.hs:33:1: Warning: Tab character
 src/Lib.hs:34:1: Warning: Tab character
 
 src/Lib.hs:35:1: Warning: Tab character
+
+src/Lib.hs:36:1: Warning: Tab character
+
+src/Lib.hs:37:1: Warning: Tab character
 
 src/Lib.hs:39:1: Warning: Tab character
 

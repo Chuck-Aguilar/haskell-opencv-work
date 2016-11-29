@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-21 15:33:14.007534 UTC
+2016-11-29 09:55:04.316675 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib 7103
-  interface hash: 900e4800da9517cf6d7ff6f24fd900c3
-  ABI hash: f19c8da0dd9c7986a46a0df09e295710
-  export-list hash: 66bc866813f349b135c20dc4ddbd7697
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  interface hash: f1f169ef65d4d8d293dc7e8dbf7d9fe4
+  ABI hash: dc405194b10c94235c4ed058a850067b
+  export-list hash: 1b6538a4b3bd87264962188ef7d854af
+  orphan hash: b60c5f42495a1700b2e7429cae30b0b3
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
   sig of: Nothing
   used TH splices: False
@@ -201,8 +201,10 @@ import  -/  base-4.8.2.0:Data.Word ec8deb535202352cc8b509b14004bcbd
 import  -/  base-4.8.2.0:Foreign.C.Types cbaa8f9d467b53c6af805ebf0a4c7eb3
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Int 28d8a9f7cfc272358fb4631d98c579ce
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
 import  -/  base-4.8.2.0:GHC.Word 10dc88543d98000abab9695a1019767d
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
 import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString 4d711736b0a2cbe42c3b3c3f195a9aad
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
 import  -/  linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2 5c727ef3668ea96ff4edd21393f561f0
@@ -220,6 +222,7 @@ import  -/  CannyImage ade454cf8198395de96e6ce7d4a2675d
   cannyImage eb257f2dc2d9542c8dc0a7876c3f4a22
 import  -/  FindContours e5748dd4565c8c3e548f7a4ae6520b33
   exports: 20ffbe17c948770e252032a9f03a90cb
+  findingContours 5dfd162dba57ddc9cc227418cd3b486b
 import  -/  ResizeImage 8cf46425a3324e6bd1339e5052c284ea
   exports: df26a02e1904da0b1c9922b50121b382
   resizeImage 090b7a846fdb0b7b5f6940c355252678
@@ -227,8 +230,27 @@ import  -/  RightReceipt 255a44fa896236842004de7c79ac9f5e
   exports: fc5dd0e223bbcdebdc8151409fe91582
 import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
   exports: 0a04ff5e9ffd8025faa2d6c44be78a68
+  dictAreaPoints 55c37230fe9a0695b97109c1f72d46c8
+  getListOfPoints 6d74a341bf8f4344592c24c63bba7750
 import  -/  vector-algorithms-0.7.0.1@vecto_2O3XZ6glbAwDmJCc3dC3Ee:Data.Vector.Algorithms.Intro 108378b1513929dc10e120d12ef7d1aa
 import  -/  vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector 512d7f6fa3b1d8745a1f7b6f5b8fd295
+5a510aadfff28eb499a74915cbd10161
+  $s$fShow(,)_$s$fShow(,)_$cshowList ::
+    [(GHC.Int.Int32, GHC.Int.Int32)] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: [(GHC.Int.Int32, GHC.Int.Int32)]
+                   eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ (GHC.Int.Int32, GHC.Int.Int32)
+                   (GHC.Show.$fShow(,)_$cshowsPrec
+                      @ GHC.Int.Int32
+                      @ GHC.Int.Int32
+                      GHC.Int.$fShowInt32
+                      GHC.Int.$fShowInt32
+                      GHC.Show.shows18)
+                   eta
+                   eta1) -}
 5d5a1637d051c2eec32d1457f79c0fcd
   $scoerceMat2 ::
     Data.Proxy.Proxy ('OpenCV.TypeLevel.S 1)
@@ -256,30 +278,15 @@ cf626d9eea372682fcedf5026ae6264f
                          @ (OpenCV.TypeLevel.DS GHC.Int.Int32)
                          (OpenCV.TypeLevel.D @ GHC.Int.Int32)
                          (GHC.Types.[] @ (OpenCV.TypeLevel.DS GHC.Int.Int32))))) -}
-43fa5a4f0e159cbfacbb89e22bee0c8a
-  controller ::
-    GHC.Types.IO
-      (OpenCV.Internal.Core.Types.Mat.Mat
-         ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-         ('OpenCV.TypeLevel.S 1)
-         ('OpenCV.TypeLevel.S GHC.Word.Word8))
+bb3bfb4e44b952b4700ce0e135cc4bde
+  controller :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.controller1
-                  `cast`
-                (Sym (GHC.Types.NTCo:IO[0]
-                          <OpenCV.Internal.Core.Types.Mat.Mat
-                             ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-                             ('OpenCV.TypeLevel.S 1)
-                             ('OpenCV.TypeLevel.S GHC.Word.Word8)>_R)) -}
-3a0d41c5f57de42b399dbed42d6dc1d6
+                Lib.controller1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+3b31290b1ad67a6b637d8d8ceb50a81f
   controller1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          OpenCV.Internal.Core.Types.Mat.Mat
-            ('OpenCV.TypeLevel.S '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-            ('OpenCV.TypeLevel.S 1)
-            ('OpenCV.TypeLevel.S GHC.Word.Word8) #)
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
                  case Control.Exception.Base.bracket1
@@ -311,93 +318,137 @@ cf626d9eea372682fcedf5026ae6264f
                            (UnivCo opt_phantom phantom GHC.Prim.Any 'OpenCV.TypeLevel.D)
                            (UnivCo opt_phantom phantom GHC.Prim.Any 'OpenCV.TypeLevel.D))_R
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 (# ipv2,
-                    case OpenCV.ImgProc.FeatureDetection.canny1
-                           @ 'OpenCV.TypeLevel.D
-                           @ 'OpenCV.TypeLevel.D
-                           @ ('OpenCV.TypeLevel.S 1)
-                           CannyImage.cannyImage4
-                           CannyImage.cannyImage3
-                           (GHC.Base.Nothing @ GHC.Int.Int32)
-                           OpenCV.ImgProc.FeatureDetection.CannyNormL1
-                           (case OpenCV.ImgProc.ImgFiltering.$wa4
-                                   @ Linear.V2.V2
-                                   @ ('OpenCV.TypeLevel.S
-                                        '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-                                   @ 1
-                                   @ GHC.Word.Word8
-                                   OpenCV.Core.Types.Size.$fIsSizeV2Int32
-                                   BlurImage.blurImage3
-                                   BlurImage.blurImage2
-                                   BlurImage.blurImage2
-                                   (case OpenCV.Internal.Core.Types.Mat.typeCheckMat
-                                           @ ('OpenCV.TypeLevel.S
-                                                '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-                                           @ ('OpenCV.TypeLevel.S 1)
-                                           @ ('OpenCV.TypeLevel.S GHC.Word.Word8)
-                                           Lib.$scoerceMat4
-                                             `cast`
-                                           (Sym (OpenCV.Internal.Core.Types.Mat.NTCo:ToShapeDS[0]
-                                                     <Data.Proxy.Proxy
-                                                        ('OpenCV.TypeLevel.S
-                                                           '['OpenCV.TypeLevel.D,
-                                                             'OpenCV.TypeLevel.D])>_N))
-                                           Lib.$scoerceMat2
-                                             `cast`
-                                           (Sym (OpenCV.TypeLevel.NTCo:ToNatDS[0]
-                                                     <Data.Proxy.Proxy ('OpenCV.TypeLevel.S 1)>_N))
-                                           (OpenCV.Internal.Core.Types.Mat.Depth.$fToDepthDSproxy5_$ctoDepthDS
-                                              @ Data.Proxy.Proxy)
-                                             `cast`
-                                           (Sym (OpenCV.Internal.Core.Types.Mat.Depth.NTCo:ToDepthDS[0]
-                                                     <Data.Proxy.Proxy
-                                                        ('OpenCV.TypeLevel.S GHC.Word.Word8)>_N))
-                                           ipv3
-                                             `cast`
-                                           (OpenCV.Internal.Core.Types.Mat.Mat
-                                              <'OpenCV.TypeLevel.S
-                                                 '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D]>_P
-                                              (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
-                                                                                                 1))
-                                              (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
-                                                                                                 GHC.Word.Word8)))_R of wild {
-                                      []
-                                      -> ipv3
-                                           `cast`
-                                         (OpenCV.Internal.Core.Types.Mat.Mat
-                                            <'OpenCV.TypeLevel.S
-                                               '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D]>_P
-                                            (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
-                                                                                               1))
-                                            (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
-                                                                                               GHC.Word.Word8)))_R
-                                      : ds3 ds4
-                                      -> GHC.Exception.throw1
-                                           @ OpenCV.Internal.Exception.CvException
-                                           @ (OpenCV.Internal.Core.Types.Mat.Mat
-                                                ('OpenCV.TypeLevel.S
-                                                   '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-                                                ('OpenCV.TypeLevel.S 1)
-                                                ('OpenCV.TypeLevel.S GHC.Word.Word8))
-                                           (OpenCV.Internal.Exception.CoerceMatError wild)
-                                           OpenCV.Internal.Exception.$fExceptionCvException }) of wild {
-                              Data.Either.Left x1
-                              -> GHC.Exception.throw1
-                                   @ OpenCV.Internal.Exception.CvException
-                                   @ (OpenCV.Internal.Core.Types.Mat.Mat
-                                        ('OpenCV.TypeLevel.S
-                                           '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
-                                        ('OpenCV.TypeLevel.S 1)
-                                        ('OpenCV.TypeLevel.S GHC.Word.Word8))
-                                   x1
-                                   OpenCV.Internal.Exception.$fExceptionCvException
-                              Data.Either.Right y -> y }) of wild {
-                      Data.Either.Left x1
-                      -> CannyImage.cannyImage2
-                           @ 'OpenCV.TypeLevel.D
-                           @ 'OpenCV.TypeLevel.D
-                           x1
-                      Data.Either.Right y -> y } #) } }) -}
+                 case (FindContours.findingContours
+                         @ 'OpenCV.TypeLevel.D
+                         @ 'OpenCV.TypeLevel.D
+                         @ GHC.Types.IO
+                         Control.Monad.Primitive.$fPrimMonadIO
+                         (case OpenCV.ImgProc.FeatureDetection.canny1
+                                 @ 'OpenCV.TypeLevel.D
+                                 @ 'OpenCV.TypeLevel.D
+                                 @ ('OpenCV.TypeLevel.S 1)
+                                 CannyImage.cannyImage4
+                                 CannyImage.cannyImage3
+                                 (GHC.Base.Nothing @ GHC.Int.Int32)
+                                 OpenCV.ImgProc.FeatureDetection.CannyNormL1
+                                 (case OpenCV.ImgProc.ImgFiltering.$wa4
+                                         @ Linear.V2.V2
+                                         @ ('OpenCV.TypeLevel.S
+                                              '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                                         @ 1
+                                         @ GHC.Word.Word8
+                                         OpenCV.Core.Types.Size.$fIsSizeV2Int32
+                                         BlurImage.blurImage3
+                                         BlurImage.blurImage2
+                                         BlurImage.blurImage2
+                                         (case OpenCV.Internal.Core.Types.Mat.typeCheckMat
+                                                 @ ('OpenCV.TypeLevel.S
+                                                      '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                                                 @ ('OpenCV.TypeLevel.S 1)
+                                                 @ ('OpenCV.TypeLevel.S GHC.Word.Word8)
+                                                 Lib.$scoerceMat4
+                                                   `cast`
+                                                 (Sym (OpenCV.Internal.Core.Types.Mat.NTCo:ToShapeDS[0]
+                                                           <Data.Proxy.Proxy
+                                                              ('OpenCV.TypeLevel.S
+                                                                 '['OpenCV.TypeLevel.D,
+                                                                   'OpenCV.TypeLevel.D])>_N))
+                                                 Lib.$scoerceMat2
+                                                   `cast`
+                                                 (Sym (OpenCV.TypeLevel.NTCo:ToNatDS[0]
+                                                           <Data.Proxy.Proxy
+                                                              ('OpenCV.TypeLevel.S 1)>_N))
+                                                 (OpenCV.Internal.Core.Types.Mat.Depth.$fToDepthDSproxy5_$ctoDepthDS
+                                                    @ Data.Proxy.Proxy)
+                                                   `cast`
+                                                 (Sym (OpenCV.Internal.Core.Types.Mat.Depth.NTCo:ToDepthDS[0]
+                                                           <Data.Proxy.Proxy
+                                                              ('OpenCV.TypeLevel.S
+                                                                 GHC.Word.Word8)>_N))
+                                                 ipv3
+                                                   `cast`
+                                                 (OpenCV.Internal.Core.Types.Mat.Mat
+                                                    <'OpenCV.TypeLevel.S
+                                                       '['OpenCV.TypeLevel.D,
+                                                         'OpenCV.TypeLevel.D]>_P
+                                                    (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
+                                                                                                       1))
+                                                    (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
+                                                                                                       GHC.Word.Word8)))_R of wild {
+                                            []
+                                            -> ipv3
+                                                 `cast`
+                                               (OpenCV.Internal.Core.Types.Mat.Mat
+                                                  <'OpenCV.TypeLevel.S
+                                                     '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D]>_P
+                                                  (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
+                                                                                                     1))
+                                                  (UnivCo opt_phantom phantom 'OpenCV.TypeLevel.D ('OpenCV.TypeLevel.S
+                                                                                                     GHC.Word.Word8)))_R
+                                            : ds3 ds4
+                                            -> GHC.Exception.throw1
+                                                 @ OpenCV.Internal.Exception.CvException
+                                                 @ (OpenCV.Internal.Core.Types.Mat.Mat
+                                                      ('OpenCV.TypeLevel.S
+                                                         '['OpenCV.TypeLevel.D,
+                                                           'OpenCV.TypeLevel.D])
+                                                      ('OpenCV.TypeLevel.S 1)
+                                                      ('OpenCV.TypeLevel.S GHC.Word.Word8))
+                                                 (OpenCV.Internal.Exception.CoerceMatError wild)
+                                                 OpenCV.Internal.Exception.$fExceptionCvException }) of wild {
+                                    Data.Either.Left x1
+                                    -> GHC.Exception.throw1
+                                         @ OpenCV.Internal.Exception.CvException
+                                         @ (OpenCV.Internal.Core.Types.Mat.Mat
+                                              ('OpenCV.TypeLevel.S
+                                                 '['OpenCV.TypeLevel.D, 'OpenCV.TypeLevel.D])
+                                              ('OpenCV.TypeLevel.S 1)
+                                              ('OpenCV.TypeLevel.S GHC.Word.Word8))
+                                         x1
+                                         OpenCV.Internal.Exception.$fExceptionCvException
+                                    Data.Either.Right y -> y }) of wild {
+                            Data.Either.Left x1
+                            -> CannyImage.cannyImage2
+                                 @ 'OpenCV.TypeLevel.D
+                                 @ 'OpenCV.TypeLevel.D
+                                 x1
+                            Data.Either.Right y -> y }))
+                        `cast`
+                      (GHC.Types.NTCo:IO[0]
+                           <Data.Vector.Vector OpenCV.ImgProc.StructuralAnalysis.Contour>_R)
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (case ipv5 of v2 { Data.Vector.Vector ipv6 ipv7 ipv8 ->
+                    letrec {
+                      $wgo :: GHC.Prim.Int#
+                              -> [OpenCV.ImgProc.StructuralAnalysis.Contour]
+                        {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                      = \ ww :: GHC.Prim.Int# ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.>=# ww ipv7) of wild2 {
+                          GHC.Types.False
+                          -> case GHC.Prim.indexArray#
+                                    @ OpenCV.ImgProc.StructuralAnalysis.Contour
+                                    ipv8
+                                    (GHC.Prim.+# ipv6 ww) of ds4 { (##) ipv9 ->
+                             GHC.Types.:
+                               @ OpenCV.ImgProc.StructuralAnalysis.Contour
+                               ipv9
+                               ($wgo (GHC.Prim.+# ww 1)) }
+                          GHC.Types.True
+                          -> GHC.Types.[] @ OpenCV.ImgProc.StructuralAnalysis.Contour }
+                    } in
+                    GHC.Show.showList__
+                      @ [(GHC.Int.Int32, GHC.Int.Int32)]
+                      Lib.$s$fShow(,)_$s$fShow(,)_$cshowList
+                      (Utils.getListOfPoints_go
+                         ($wgo 0)
+                         (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)]))
+                      (GHC.Types.[] @ GHC.Types.Char) })
+                   GHC.Types.True
+                   ipv4 } } }) -}
 1b111e93758719a18f339acdaf718115
   controller2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -411,6 +462,15 @@ cf626d9eea372682fcedf5026ae6264f
   controller3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "/home/chuck/Pictures/rumpler_black.JPG"#) -}
+"SPEC/Lib $fShow(,)_$cshowList @ Int32 @ Int32" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                            GHC.Int.Int32
+                                                                $dShow1 :: GHC.Show.Show
+                                                                             GHC.Int.Int32
+  GHC.Show.$fShow(,)_$cshowList @ GHC.Int.Int32
+                                @ GHC.Int.Int32
+                                $dShow
+                                $dShow1
+  = Lib.$s$fShow(,)_$s$fShow(,)_$cshowList
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
