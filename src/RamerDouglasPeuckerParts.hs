@@ -15,10 +15,11 @@ module RamerDouglasPeuckerParts
 
 import Data.Maybe
 import Data.List
+import GHC.Int (Int32)
 
 type Range = [Int]
 type Stack = [Range]
-type Point = (Int, Int) 
+type Point = (Int32, Int32) 
 
 data All = All { finalContours :: [Point], stack :: Stack } deriving Show
 
@@ -130,15 +131,16 @@ trd (_, _, x) = x
 recurProcess :: All -> [Point] -> Double -> Range -> Int -> [Point]
 recurProcess (All fC []) srcContours epsi right_slice count = fC  
 recurProcess all srcContours epsi right_slice count         
-        |le_eps == True  = recurProcess (All (writePt (getFinalContours all) new_start_pt) crrntStck) srcContours epsi new_right_slice count
-        |otherwise       = recurProcess (All (getFinalContours all) (pushSlice last_slice (pushSlice last_right_slice crrntStck))) srcContours epsi last_right_slice count
+        |le_eps == True && new_right_slice == [-1, -1] = recurProcess (All (getFinalContours all) (tail crrntStck)) srcContours epsi right_slice count
+        |le_eps == True                                = recurProcess (All (writePt (getFinalContours all) new_start_pt) crrntStck) srcContours epsi new_right_slice count
+        |otherwise                                     = recurProcess (All (getFinalContours all) (pushSlice last_slice (pushSlice last_right_slice crrntStck))) srcContours epsi last_right_slice count
         where
                 slice             = head (getStack all)
                 crrntStck         = tail (getStack all) 
                 end_pt            = srcContours !! (last slice)
                 pos               = head slice
                 start_pt          = srcContours !! pos
-                recuFunc          = recursiveFunc all srcContours epsi slice right_slice start_pt end_pt pos count
+                recuFunc          = recursiveFunc all srcContours epsi slice right_slice start_pt end_pt (addSafePos pos count) count
                 new_start_pt      = myfst recuFunc
                 le_eps            = mysnd recuFunc
                 new_right_slice   = trd recuFunc      
@@ -147,8 +149,9 @@ recurProcess all srcContours epsi right_slice count
 
 recursiveFunc :: All -> [Point] -> Double -> Range -> Range -> Point -> Point -> Int -> Int -> (Point, Bool, Range)
 recursiveFunc all srcContours epsi slice right_slice start_pt end_pt pos count
-        | pos /= last slice = (start_pt, le_eps, (fst range_dist))
-        | otherwise         = (srcContours !! (head slice), True, right_slice)
+        | dx == 0 && dy == 0 = (srcContours !! (head slice), True, [-1, -1])
+        | pos /= last slice  = (start_pt, le_eps, (fst range_dist))
+        | otherwise          = (srcContours !! (head slice), True, right_slice)
         where 
                 dx         = dxFunc end_pt start_pt
                 dy         = dyFunc end_pt start_pt
@@ -157,16 +160,16 @@ recursiveFunc all srcContours epsi slice right_slice start_pt end_pt pos count
                 newDis     = snd range_dist 
                 le_eps     = fromIntegral (newDis * newDis) <= epsi * fromIntegral (dx * dx + dy * dy)
 
-dxFunc :: Point -> Point -> Int
+dxFunc :: Point -> Point -> Int32
 dxFunc end_pt start_pt = (fst end_pt) - (fst start_pt)
 
-dyFunc :: Point -> Point -> Int
+dyFunc :: Point -> Point -> Int32
 dyFunc end_pt start_pt = (snd end_pt) - (snd start_pt)
                 
-secondRecursiveFunc :: [Point] -> Int -> Int -> Int -> Int -> Int -> Range -> Range -> Point -> (Range, Int) 
+secondRecursiveFunc :: [Point] -> Int -> Int32 -> Int32 -> Int -> Int -> Range -> Range -> Point -> (Range, Int) 
 secondRecursiveFunc srcContours count dx dy max_dist pos slice right_slice start_pt
         | pos == (last slice)                      = (right_slice, max_dist) 
-        | pos /= (last slice) && (dist > max_dist) = secondRecursiveFunc srcContours count dx dy dist (addSafePos pos count) slice new_right_slice start_pt
+        | pos /= (last slice) && ((fromIntegral dist) > max_dist) = secondRecursiveFunc srcContours count dx dy (fromIntegral dist) (addSafePos pos count) slice new_right_slice start_pt
         | otherwise                                = secondRecursiveFunc srcContours count dx dy max_dist (addSafePos pos count) slice right_slice start_pt
         where
                 new_right_slice = changeFirstValue right_slice ((pos + count - 1) `mod` count)
@@ -191,13 +194,13 @@ last_stage i epsi count new_count pos start_pt wpos pt dstContours
                 dy                       = dyFunc end_pt start_pt
                 dist                     = abs (((fst pt) - (fst start_pt)) * dy - ((snd pt) - (snd start_pt)) * dx)
                 successive_inner_product = (((fst pt) - (fst start_pt)) * ((fst end_pt) - (fst pt)) + ((snd pt) - (snd start_pt)) * ((snd end_pt) - (snd pt)))
-                l_s_f                    = last_stage_decision dist successive_inner_product epsi dx dy i count wpos pos new_count start_pt end_pt pt dstContours
+                l_s_f                    = last_stage_decision (fromIntegral dist) successive_inner_product epsi dx dy i count wpos pos new_count start_pt end_pt pt dstContours
                 l_s_f_fst                = myfst l_s_f
                 l_s_f_snd                = mysnd l_s_f
                 l_s_f_trd                = trd l_s_f 
 
 
-last_stage_decision :: Int -> Int -> Double -> Int -> Int -> Int -> Int -> Int -> Int -> Int -> Point -> Point -> Point -> [Point] -> ([Int], [Point], [Point])
+last_stage_decision :: Int -> Int32 -> Double -> Int32 -> Int32 -> Int -> Int -> Int -> Int -> Int -> Point -> Point -> Point -> [Point] -> ([Int], [Point], [Point])
 last_stage_decision dist succesive_inner_product eps dx dy i count wpos pos new_count start_pt end_pt pt dstContours 
         | condition = ([(i+1), (new_count - 1), (addSafePos wpos count), (addSafePos pos count)], finalDstContours, [end_pt, (readDstPt finalDstContours pos)])
         | otherwise = ([(i+1), new_count, (addSafePos wpos count), pos], finalSecondDstContours, [pt, pt])
@@ -213,15 +216,16 @@ replaceListValue (x:dstContours) end_pt wpos
         | otherwise = x : replaceListValue dstContours end_pt (wpos - 1)        
 
 
+optimizing :: [Point] -> [Point]
+optimizing listOfPoint = optimizingRecu listOfPoint 0 0 False True []
+
+optimizingRecu :: [Point] -> Int -> Int -> Bool -> Bool -> [Point] -> [Point]
+optimizingRecu listOfPoint count pos theLast pointsYet acc
 
 
-
-
-
-
-
-
-
+findDirection :: Point -> Point -> Bool
+findDirection (x, y) (x1, y1)
+    | 
 
 
 

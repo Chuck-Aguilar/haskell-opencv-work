@@ -15,13 +15,17 @@ points3 = [(63,162),(62,163),(62,169),(63,170),(63,172),(66,175),(68,175),(69,17
 
 points4 = [(1,4),(2,3),(4,2),(6,2),(8,3),(9,5)]
 
+testing_point = [(33,411),(630,410),(632,106),(39,96)]
+testing_points = [(131,161),(45,160),(39,357),(390,368),(475,369),(482,171)]
+testing_points1 = [(161,163),(481,170),(476,366),(348,366),(41,359),(41,162)]
+testing_points2 = [(160,343),(186,333),(163,338),(159,332),(135,331),(132,351),(179,354),(185,353),(138,347),(136,336),(137,335)]
 
 
 #points = np.random.rand(30, 2)   # 30 random points in 2-D
 
-points = rdp(np.asarray(points1), epsilon=18*0.02) 			# 38.46940258945182  4225396744416663
+points = np.asarray(testing_points2)			# 38.46940258945182  4225396744416663
 # points = cv2.approxPolyDP(np.asarray(points1), 38.422539674441666, True)
-print (cv2.approxPolyDP(np.asarray(points1), 38.46940258945182, True))
+print (cv2.approxPolyDP(np.asarray(testing_points2), 5.3, True))
 
 
 hull = ConvexHull(points)

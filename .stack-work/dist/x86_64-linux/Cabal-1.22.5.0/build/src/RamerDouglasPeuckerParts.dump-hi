@@ -1,0 +1,395 @@
+
+==================== FINAL INTERFACE ====================
+2016-12-07 08:51:21.240657 UTC
+
+interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RamerDouglasPeuckerParts 7103
+  interface hash: 2ddb7cbf28d17c4f4ffc45633463b615
+  ABI hash: 83892035757d721e8b32773a69b1549d
+  export-list hash: d2a15a16ae69b7e8c5e24a42e635690a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  RamerDouglasPeuckerParts.findFarthestPoints
+  RamerDouglasPeuckerParts.getRightSliceFromStack
+  RamerDouglasPeuckerParts.initStack
+  RamerDouglasPeuckerParts.myfst
+  RamerDouglasPeuckerParts.mysnd
+  RamerDouglasPeuckerParts.recurProcess
+  RamerDouglasPeuckerParts.trd
+  RamerDouglasPeuckerParts.All{RamerDouglasPeuckerParts.All RamerDouglasPeuckerParts.finalContours RamerDouglasPeuckerParts.stack}
+  RamerDouglasPeuckerParts.Point
+  RamerDouglasPeuckerParts.Range
+  RamerDouglasPeuckerParts.Stack
+module dependencies:
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.Int 28d8a9f7cfc272358fb4631d98c579ce
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
+import  -/  base-4.8.2.0:GHC.Show 0e1d8380a8fb0cfb07ebeda3b70cbf38
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+8251b250f7922cd64f001e02d6556413
+  $fShowAll :: GHC.Show.Show RamerDouglasPeuckerParts.All
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ RamerDouglasPeuckerParts.All
+                  RamerDouglasPeuckerParts.$fShowAll_$cshowsPrec
+                  RamerDouglasPeuckerParts.$fShowAll_$cshow
+                  RamerDouglasPeuckerParts.$fShowAll_$cshowList -}
+8251b250f7922cd64f001e02d6556413
+  $fShowAll1 :: RamerDouglasPeuckerParts.All -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: RamerDouglasPeuckerParts.All
+                   w1 :: GHC.Base.String ->
+                 case w of ww { RamerDouglasPeuckerParts.All ww1 ww2 ->
+                 RamerDouglasPeuckerParts.$w$cshowsPrec 0 ww1 ww2 w1 }) -}
+8251b250f7922cd64f001e02d6556413
+  $fShowAll_$cshow :: RamerDouglasPeuckerParts.All -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: RamerDouglasPeuckerParts.All ->
+                 RamerDouglasPeuckerParts.$fShowAll_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+8251b250f7922cd64f001e02d6556413
+  $fShowAll_$cshowList ::
+    [RamerDouglasPeuckerParts.All] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ RamerDouglasPeuckerParts.All
+                   RamerDouglasPeuckerParts.$fShowAll1) -}
+8251b250f7922cd64f001e02d6556413
+  $fShowAll_$cshowsPrec ::
+    GHC.Types.Int -> RamerDouglasPeuckerParts.All -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: RamerDouglasPeuckerParts.All
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { RamerDouglasPeuckerParts.All ww3 ww4 ->
+                 RamerDouglasPeuckerParts.$w$cshowsPrec ww1 ww3 ww4 w2 } }) -}
+93074844f416f6627ce0edca31d629aa
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> [RamerDouglasPeuckerParts.Point]
+    -> RamerDouglasPeuckerParts.Stack
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <L,U><L,1*U><L,1*U><L,U>, Inline: [0] -}
+555c3321776b816e185007083bec9715
+  $wfindFarthestPoints ::
+    [RamerDouglasPeuckerParts.Point]
+    -> GHC.Prim.Int#
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> RamerDouglasPeuckerParts.Range
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> RamerDouglasPeuckerParts.Point
+    -> (# RamerDouglasPeuckerParts.Range,
+          RamerDouglasPeuckerParts.Point,
+          GHC.Types.Bool #)
+  {- Arity: 8,
+     Strictness: <L,U><S,1*U><L,U(U)><L,1*U(U)><L,U><L,U(U)><L,1*U(U)><L,U(U(U),U(U))>,
+     Inline: [0] -}
+284a61ead55560a959708172d6549620
+  $wgetRightSliceFromStack ::
+    RamerDouglasPeuckerParts.Stack -> RamerDouglasPeuckerParts.Range
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ ww :: RamerDouglasPeuckerParts.Stack ->
+                 RamerDouglasPeuckerParts.getRightSliceFromStack_go
+                   ww
+                   (GHC.List.lastError @ RamerDouglasPeuckerParts.Range)) -}
+e95e0ba2c0d0ce90f2f702cac98288e3
+  $winitStack ::
+    [RamerDouglasPeuckerParts.Point]
+    -> RamerDouglasPeuckerParts.Range
+    -> RamerDouglasPeuckerParts.Range
+    -> RamerDouglasPeuckerParts.Point
+    -> GHC.Types.Bool
+    -> GHC.Types.Int
+    -> RamerDouglasPeuckerParts.All
+    -> (# [RamerDouglasPeuckerParts.Point],
+          RamerDouglasPeuckerParts.Stack #)
+  {- Arity: 7,
+     Strictness: <L,1*U><L,1*U><L,1*U><L,U(U(U),U(U))><S,1*U><L,U(U)><S,1*H>,
+     Inline: [0],
+     Unfolding: (\ w :: [RamerDouglasPeuckerParts.Point]
+                   w1 :: RamerDouglasPeuckerParts.Range
+                   w2 :: RamerDouglasPeuckerParts.Range
+                   w3 :: RamerDouglasPeuckerParts.Point
+                   w4 :: GHC.Types.Bool
+                   w5 :: GHC.Types.Int
+                   w6 :: RamerDouglasPeuckerParts.All ->
+                 case w4 of wild {
+                   GHC.Types.False
+                   -> (# GHC.Types.[] @ RamerDouglasPeuckerParts.Point,
+                         let {
+                           pos :: GHC.Types.Int
+                           = case Data.OldList.findIndex
+                                    @ RamerDouglasPeuckerParts.Point
+                                    (\ w7 :: (GHC.Int.Int32, GHC.Int.Int32) ->
+                                     case w3 of ww { (,) ww1 ww2 ->
+                                     case w7 of ww3 { (,) ww4 ww5 ->
+                                     case ww1 of wild1 { GHC.Int.I32# a2 ->
+                                     case ww4 of wild2 { GHC.Int.I32# b1 ->
+                                     case GHC.Prim.tagToEnum#
+                                            @ GHC.Types.Bool
+                                            (GHC.Prim.==# a2 b1) of wild3 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True -> GHC.Int.$fEqInt32_$c== ww2 ww5 } } } } })
+                                    w of wild1 {
+                               GHC.Base.Nothing -> Data.Maybe.fromJust1 @ GHC.Types.Int
+                               GHC.Base.Just x -> x }
+                         } in
+                         let {
+                           a2 :: [GHC.Types.Int]
+                           = RamerDouglasPeuckerParts.changeSecondValue'
+                               w1
+                               (GHC.Real.$fIntegralInt_$cmod pos w5)
+                               (GHC.Types.[] @ GHC.Types.Int)
+                         } in
+                         let {
+                           a3 :: [GHC.Types.Int]
+                           = case w2 of wild1 {
+                               [] -> RamerDouglasPeuckerParts.initStack2
+                               : x xs
+                               -> GHC.Types.:
+                                    @ GHC.Types.Int
+                                    (GHC.Real.$fIntegralInt_$cmod pos w5)
+                                    xs }
+                         } in
+                         let {
+                           ecuation :: GHC.Types.Int
+                           = case w5 of ww { GHC.Types.I# ww1 ->
+                             case ww1 of wild1 {
+                               DEFAULT
+                               -> case a2 of wild2 {
+                                    [] -> case GHC.List.badHead ret_ty GHC.Types.Int of {}
+                                    : x ds1
+                                    -> case x of wild3 { GHC.Types.I# x1 ->
+                                       case a3 of wild4 {
+                                         [] -> case GHC.List.badHead ret_ty GHC.Types.Int of {}
+                                         : x2 ds2
+                                         -> case x2 of wild5 { GHC.Types.I# y ->
+                                            case GHC.Classes.modInt#
+                                                   (GHC.Prim.+# x1 y)
+                                                   wild1 of ww2 { DEFAULT ->
+                                            GHC.Types.I# ww2 } } } } }
+                               (-1) -> RamerDouglasPeuckerParts.initStack1
+                               0 -> case GHC.Real.divZeroError ret_ty GHC.Types.Int of {} } }
+                         } in
+                         GHC.Types.:
+                           @ RamerDouglasPeuckerParts.Range
+                           (RamerDouglasPeuckerParts.changeSecondValue'
+                              a3
+                              ecuation
+                              (GHC.Types.[] @ GHC.Types.Int))
+                           (GHC.Types.:
+                              @ RamerDouglasPeuckerParts.Range
+                              (case a2 of wild1 {
+                                 [] -> RamerDouglasPeuckerParts.initStack2
+                                 : x xs -> GHC.Types.: @ GHC.Types.Int ecuation xs })
+                              (GHC.Types.[] @ RamerDouglasPeuckerParts.Range)) #)
+                   GHC.Types.True
+                   -> (# GHC.Types.:
+                           @ (GHC.Int.Int32, GHC.Int.Int32)
+                           w3
+                           (GHC.Types.[] @ (GHC.Int.Int32, GHC.Int.Int32)),
+                         GHC.Types.[] @ RamerDouglasPeuckerParts.Range #) }) -}
+8c7d0870b3d7975422293e52d1e2eea3
+  $wrecurProcess ::
+    [RamerDouglasPeuckerParts.Point]
+    -> RamerDouglasPeuckerParts.Stack
+    -> [RamerDouglasPeuckerParts.Point]
+    -> GHC.Types.Double
+    -> RamerDouglasPeuckerParts.Range
+    -> GHC.Types.Int
+    -> [RamerDouglasPeuckerParts.Point]
+  {- Arity: 6, Strictness: <S,1*U><S,1*U><L,U><L,U(U)><L,U><L,U(U)>,
+     Inline: [0] -}
+8251b250f7922cd64f001e02d6556413
+  data All
+    = All {finalContours :: [RamerDouglasPeuckerParts.Point],
+           stack :: RamerDouglasPeuckerParts.Stack}
+55bb00c0bebb77344f3a53734c3a116d
+  type Point = (GHC.Int.Int32, GHC.Int.Int32)
+8188f47e3b534bb5a7edfc948b504ac6
+  type Range = [GHC.Types.Int]
+9cbd8e913c458a3397d51340a0c1f43f
+  type Stack = [RamerDouglasPeuckerParts.Range]
+f17006842adcbb50226049b44a1fb5fe
+  changeSecondValue' ::
+    [GHC.Types.Int]
+    -> GHC.Types.Int -> [GHC.Types.Int] -> [GHC.Types.Int]
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+b11aed499da7e6f211808acf5d39a18d
+  finalContours ::
+    RamerDouglasPeuckerParts.All -> [RamerDouglasPeuckerParts.Point]
+  RecSel RamerDouglasPeuckerParts.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: RamerDouglasPeuckerParts.All ->
+                 case ds of wild { RamerDouglasPeuckerParts.All ds1 ds2 -> ds1 }) -}
+abc0bf7d58f4d3f6c7508848838a0dcb
+  findFarthestPoints ::
+    [RamerDouglasPeuckerParts.Point]
+    -> GHC.Types.Int
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> GHC.Types.Double
+    -> RamerDouglasPeuckerParts.Range
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> RamerDouglasPeuckerParts.Point
+    -> (RamerDouglasPeuckerParts.Range,
+        RamerDouglasPeuckerParts.Point,
+        GHC.Types.Bool)
+  {- Arity: 9,
+     Strictness: <L,U><S(S),1*U(1*U)><L,A><L,U(U)><L,1*U(U)><L,U><L,U(U)><L,1*U(U)><L,U(U(U),U(U))>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (9, True, False)
+                (\ w :: [RamerDouglasPeuckerParts.Point]
+                   w1 :: GHC.Types.Int
+                   w2 :: GHC.Types.Double
+                   w3 :: GHC.Types.Double
+                   w4 :: GHC.Types.Double
+                   w5 :: RamerDouglasPeuckerParts.Range
+                   w6 :: GHC.Types.Int
+                   w7 :: GHC.Types.Int
+                   w8 :: RamerDouglasPeuckerParts.Point ->
+                 case w1 of ww { GHC.Types.I# ww1 ->
+                 case RamerDouglasPeuckerParts.$wfindFarthestPoints
+                        w
+                        ww1
+                        w3
+                        w4
+                        w5
+                        w6
+                        w7
+                        w8 of ww2 { (#,,#) ww3 ww4 ww5 ->
+                 (ww3, ww4, ww5) } }) -}
+ffd034887e80854546cd9d503d0c2979
+  getRightSliceFromStack ::
+    RamerDouglasPeuckerParts.All -> RamerDouglasPeuckerParts.Range
+  {- Arity: 1, Strictness: <S(LS),1*U(A,1*U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: RamerDouglasPeuckerParts.All ->
+                 case w of ww { RamerDouglasPeuckerParts.All ww1 ww2 ->
+                 RamerDouglasPeuckerParts.$wgetRightSliceFromStack ww2 }) -}
+f9a6d1a3ab981aa6de4ffb260033ddfe
+  getRightSliceFromStack_go ::
+    [RamerDouglasPeuckerParts.Range]
+    -> RamerDouglasPeuckerParts.Range -> RamerDouglasPeuckerParts.Range
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+ac3417920b3b4ecc28eba531fb53a02b
+  initStack ::
+    [RamerDouglasPeuckerParts.Point]
+    -> RamerDouglasPeuckerParts.Range
+    -> RamerDouglasPeuckerParts.Range
+    -> RamerDouglasPeuckerParts.Point
+    -> GHC.Types.Bool
+    -> GHC.Types.Int
+    -> RamerDouglasPeuckerParts.All
+    -> RamerDouglasPeuckerParts.All
+  {- Arity: 7,
+     Strictness: <L,1*U><L,1*U><L,1*U><L,U(U(U),U(U))><S,1*U><L,U(U)><S,1*H>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (7, True, False)
+                (\ w :: [RamerDouglasPeuckerParts.Point]
+                   w1 :: RamerDouglasPeuckerParts.Range
+                   w2 :: RamerDouglasPeuckerParts.Range
+                   w3 :: RamerDouglasPeuckerParts.Point
+                   w4 :: GHC.Types.Bool
+                   w5 :: GHC.Types.Int
+                   w6 :: RamerDouglasPeuckerParts.All ->
+                 case w6 of w7 { RamerDouglasPeuckerParts.All ipv ipv1 ->
+                 case RamerDouglasPeuckerParts.$winitStack
+                        w
+                        w1
+                        w2
+                        w3
+                        w4
+                        w5
+                        w7 of ww { (#,#) ww1 ww2 ->
+                 RamerDouglasPeuckerParts.All ww1 ww2 } }) -}
+f6474c3414c813b086df62dbeb0d32b4
+  initStack1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+8332b2ff931d4e223133aa0db85053e8
+  initStack2 :: [GHC.Types.Int]
+  {- Strictness: b -}
+88aab8a86f624feb5fcdcfacbf78d510
+  myfst :: (a, b, c) -> a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a2 @ b @ c ds :: (a2, b, c) ->
+                 case ds of wild { (,,) x ds1 ds2 -> x }) -}
+4950d1dc70fa98661e4bbacd040f9814
+  mysnd :: (a, b, c) -> b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a2 @ b @ c ds :: (a2, b, c) ->
+                 case ds of wild { (,,) ds1 x ds2 -> x }) -}
+f7a4c05794aca1b6445e972451bcffe6
+  recurProcess ::
+    RamerDouglasPeuckerParts.All
+    -> [RamerDouglasPeuckerParts.Point]
+    -> GHC.Types.Double
+    -> RamerDouglasPeuckerParts.Range
+    -> GHC.Types.Int
+    -> [RamerDouglasPeuckerParts.Point]
+  {- Arity: 5,
+     Strictness: <S(SS),1*U(1*U,1*U)><L,U><L,U(U)><L,U><L,U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ w :: RamerDouglasPeuckerParts.All
+                   w1 :: [RamerDouglasPeuckerParts.Point]
+                   w2 :: GHC.Types.Double
+                   w3 :: RamerDouglasPeuckerParts.Range
+                   w4 :: GHC.Types.Int ->
+                 case w of ww { RamerDouglasPeuckerParts.All ww1 ww2 ->
+                 RamerDouglasPeuckerParts.$wrecurProcess ww1 ww2 w1 w2 w3 w4 }) -}
+1f168bca8378733f9ae8a0470b3e859b
+  stack ::
+    RamerDouglasPeuckerParts.All -> RamerDouglasPeuckerParts.Stack
+  RecSel RamerDouglasPeuckerParts.All
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: RamerDouglasPeuckerParts.All ->
+                 case ds of wild { RamerDouglasPeuckerParts.All ds1 ds2 -> ds2 }) -}
+f166ea3d059c09f6fe744b6df2f3c0e3
+  trd :: (a, b, c) -> c
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a2 @ b @ c ds :: (a2, b, c) ->
+                 case ds of wild { (,,) ds1 ds2 x -> x }) -}
+instance GHC.Show.Show [RamerDouglasPeuckerParts.All]
+  = RamerDouglasPeuckerParts.$fShowAll
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

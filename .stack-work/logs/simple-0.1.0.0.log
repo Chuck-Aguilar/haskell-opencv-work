@@ -1,5 +1,25 @@
 Preprocessing library simple-0.1.0.0...
-[8 of 8] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o )
+[ 7 of 10] Compiling RamerDouglasPeuckerParts ( src/RamerDouglasPeuckerParts.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RamerDouglasPeuckerParts.o )
+[ 9 of 10] Compiling RightReceipt     ( src/RightReceipt.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.o )
+
+src/RightReceipt.hs:3:5: Warning: Tab character
+
+src/RightReceipt.hs:22:1: Warning: Tab character
+
+src/RightReceipt.hs:23:1: Warning: Tab character
+
+src/RightReceipt.hs:24:1: Warning: Tab character
+
+src/RightReceipt.hs:25:1: Warning: Tab character
+
+src/RightReceipt.hs:37:1: Warning: Tab character
+
+src/RightReceipt.hs:38:1: Warning: Tab character
+
+src/RightReceipt.hs:39:1: Warning: Tab character
+
+src/RightReceipt.hs:39:79: Warning: Tab character
+[10 of 10] Compiling Lib              ( src/Lib.hs, .stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o ) [RightReceipt changed]
 
 src/Lib.hs:28:1: Warning: Tab character
 

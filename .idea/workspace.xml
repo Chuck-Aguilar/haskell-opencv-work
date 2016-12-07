@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ee80f8f-6784-4e0c-ac47-fb47024423d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/pkgdb/simple-0.1.0.0-7f150e86dd1a4bb70dbf6d35d1515570.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ApproxPolyDP.hs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/RamerDouglasPeuckerParts.hs" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/FindContours.dyn_o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/FindContours.dyn_o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/FindContours.o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/FindContours.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.dyn_hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.dyn_hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.dyn_o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.dyn_o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/Lib.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.dyn_hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.dyn_hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.dyn_o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.dyn_o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/RightReceipt.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E-ghc7.10.3.so" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E-ghc7.10.3.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E.a" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/Main.hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/Main.hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/Main.o" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/Main.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/package.conf.inplace/package.cache" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/package.conf.inplace/package.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/setup-config" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/setup-config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/stack-build-cache" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/stack-build-cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/stack-cabal-mod" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/stack-cabal-mod" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/bin/simple-exe" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/bin/simple-exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/Lib.dyn_hi" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/Lib.dyn_hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/Lib.hi" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/Lib.hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/RightReceipt.dyn_hi" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/RightReceipt.dyn_hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/RightReceipt.hi" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/RightReceipt.hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E-ghc7.10.3.so" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E-ghc7.10.3.so" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E.a" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/lib/x86_64-linux-ghc-7.10.3/simple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E/libHSsimple-0.1.0.0-3KtLGDpFPvjB6VnwWh4q2E.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/pkgdb/package.cache" afterPath="$PROJECT_DIR$/.stack-work/install/x86_64-linux/lts-6.17/7.10.3/pkgdb/package.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/app/Main.dump-hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/simple-exe/simple-exe-tmp/app/Main.dump-hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/FindContours.dump-hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/FindContours.dump-hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/Lib.dump-hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/Lib.dump-hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/RightReceipt.dump-hi" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/src/RightReceipt.dump-hi" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/package.conf.inplace/simple-0.1.0.0-inplace.conf" afterPath="$PROJECT_DIR$/.stack-work/dist/x86_64-linux/Cabal-1.22.5.0/package.conf.inplace/simple-0.1.0.0-inplace.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.stack-work/logs/simple-0.1.0.0.log" afterPath="$PROJECT_DIR$/.stack-work/logs/simple-0.1.0.0.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple.cabal" afterPath="$PROJECT_DIR$/simple.cabal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FindContours.hs" afterPath="$PROJECT_DIR$/src/FindContours.hs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lib.hs" afterPath="$PROJECT_DIR$/src/Lib.hs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RightReceipt.hs" afterPath="$PROJECT_DIR$/src/RightReceipt.hs" />
+    </list>
+    <ignored path="simple.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="simple" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RamerDouglasPeuckerParts.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RamerDouglasPeuckerParts.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1458">
+              <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.hs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Main.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApproxPolyDP.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ApproxPolyDP.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlurImage.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BlurImage.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CannyImage.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CannyImage.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RightReceipt.hs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RightReceipt.hs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1985" />
+    <option name="y" value="24" />
+    <option name="width" value="2495" />
+    <option name="height" value="1416" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="prop_add_unversioned_files" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Haskell.Unnamed">
+    <configuration default="true" type="CabalRunConfiguration" factoryName="Haskell">
+      <module name="" />
+      <setting name="executableName" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <environmetVariables />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="simple" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="simple" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="CabalRunConfiguration" factoryName="Haskell">
+      <module name="simple" />
+      <setting name="executableName" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <environmetVariables />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Haskell.Unnamed" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ee80f8f-6784-4e0c-ac47-fb47024423d4" name="Default" comment="" />
+      <created>1480427737903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1480427737903</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1985" y="24" width="2495" height="1416" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="GhcMod" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25193956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Cabal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/RamerDouglasPeuckerParts.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RightReceipt.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RamerDouglasPeuckerParts.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1458">
+          <caret line="81" column="36" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ApproxPolyDP.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BlurImage.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CannyImage.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Main.hs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

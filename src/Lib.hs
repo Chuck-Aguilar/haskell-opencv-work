@@ -37,6 +37,6 @@ controller = do
 	let listOfAreas = dictAreaPoints listOfPoints
 
 	--putStrLn (show (CV.contourArea (c :: Vector CV.Point2f)))
-	putStrLn (show (listOfPoints))
-	--putStrLn (show (findReceipt listOfAreas))
+	--putStrLn (show (listOfAreas))
+	putStrLn (show (findReceipt listOfAreas))
 	--putStrLn (show (t + z))--}

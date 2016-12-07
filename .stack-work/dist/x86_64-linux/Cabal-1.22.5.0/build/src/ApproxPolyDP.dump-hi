@@ -1,0 +1,125 @@
+
+==================== FINAL INTERFACE ====================
+2016-11-30 16:43:42.004077 UTC
+
+interface simpl_3KtLGDpFPvjB6VnwWh4q2E:ApproxPolyDP 7103
+  interface hash: c26a8251d3782e3ca346827af356665b
+  ABI hash: 1b5f89c61c95c09e9d476cb6f5a225b5
+  export-list hash: 678502985dd5d544af641dce21850acb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ApproxPolyDP.minifyPolygon
+module dependencies: RamerDouglasPeuckerParts
+package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Monoid
+                         base-4.8.2.0:Data.Type.Equality base-4.8.2.0:GHC.Generics
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
+import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  RamerDouglasPeuckerParts 83892035757d721e8b32773a69b1549d
+  exports: d2a15a16ae69b7e8c5e24a42e635690a
+  All bab1527c8e64bd5fbe450e4a491c5265
+  Point 55bb00c0bebb77344f3a53734c3a116d
+  findFarthestPoints abc0bf7d58f4d3f6c7508848838a0dcb
+  getRightSliceFromStack ffd034887e80854546cd9d503d0c2979
+  initStack ac3417920b3b4ecc28eba531fb53a02b
+  myfst 88aab8a86f624feb5fcdcfacbf78d510
+  mysnd 4950d1dc70fa98661e4bbacd040f9814
+  recurProcess f7a4c05794aca1b6445e972451bcffe6
+  trd f166ea3d059c09f6fe744b6df2f3c0e3
+71f40e37f75aedbaf49b446f5063e9f7
+  minifyPolygon ::
+    [RamerDouglasPeuckerParts.Point]
+    -> GHC.Types.Double -> [RamerDouglasPeuckerParts.Point]
+  {- Arity: 2, Strictness: <L,U><L,1*U(U)>,
+     Unfolding: (\ srcContours :: [RamerDouglasPeuckerParts.Point]
+                   epsi :: GHC.Types.Double ->
+                 let {
+                   count :: GHC.Types.Int
+                   = case GHC.List.$wlenAcc
+                            @ (GHC.Int.Int32, GHC.Int.Int32)
+                            srcContours
+                            0 of ww2 { DEFAULT ->
+                     GHC.Types.I# ww2 }
+                 } in
+                 let {
+                   eps :: GHC.Types.Double
+                   = case epsi of wild { GHC.Types.D# x ->
+                     GHC.Types.D# (GHC.Prim.*## x x) }
+                 } in
+                 case RamerDouglasPeuckerParts.$wfindFarthestPoints
+                        srcContours
+                        3
+                        ApproxPolyDP.minifyPolygon4
+                        eps
+                        ApproxPolyDP.new_right_slice
+                        count
+                        ApproxPolyDP.minifyPolygon2
+                        ApproxPolyDP.new_start_point of ww2 { (#,,#) ww3 ww4 ww5 ->
+                 case RamerDouglasPeuckerParts.$winitStack
+                        srcContours
+                        ww3
+                        ApproxPolyDP.new_right_slice
+                        ww4
+                        ww5
+                        count
+                        ApproxPolyDP.new_all of ww { (#,#) ww1 ww7 ->
+                 RamerDouglasPeuckerParts.$wrecurProcess
+                   ww1
+                   ww7
+                   srcContours
+                   eps
+                   (RamerDouglasPeuckerParts.$wgetRightSliceFromStack ww7)
+                   count } }) -}
+e753d177f34325d91d6ca428e34c4ebc
+  minifyPolygon1 :: GHC.Int.Int32
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Int.I32# 0) -}
+a81eeeb363df4acae6e73dcea705ad27
+  minifyPolygon2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+ddf8b08a9c9af0ae8fd52ca2c025e34f
+  minifyPolygon3 :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   ApproxPolyDP.minifyPolygon2
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+82ef723c261af6e06579cbf25ba363cb
+  minifyPolygon4 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 0.0) -}
+4a8d225d2cfb17ceffe58b62903d330b
+  new_all :: RamerDouglasPeuckerParts.All
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (RamerDouglasPeuckerParts.All
+                   (GHC.Types.[] @ RamerDouglasPeuckerParts.Point)
+                   (GHC.Types.[] @ RamerDouglasPeuckerParts.Range)) -}
+5733798684fce245785f0fecba3a0218
+  new_right_slice :: [GHC.Types.Int]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Int
+                   ApproxPolyDP.minifyPolygon2
+                   ApproxPolyDP.minifyPolygon3) -}
+4cb08d59455912b9e3f60f510973ed45
+  new_start_point :: (GHC.Int.Int32, GHC.Int.Int32)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((ApproxPolyDP.minifyPolygon1,
+                  ApproxPolyDP.minifyPolygon1)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

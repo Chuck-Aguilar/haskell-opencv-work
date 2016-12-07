@@ -3,8 +3,8 @@
 {-# LANGUAGE AllowAmbiguousTypes #-}
 
 module FindContours
-    ( 
-    findingContours
+    (
+    	findingContours
     ) where
 
 import Utils

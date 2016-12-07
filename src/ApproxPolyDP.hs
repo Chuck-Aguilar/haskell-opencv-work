@@ -1,6 +1,6 @@
 module ApproxPolyDP
 	(
-
+		minifyPolygon		
 	) where
 
 import RamerDouglasPeuckerParts
