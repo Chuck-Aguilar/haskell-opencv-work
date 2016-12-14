@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2016-12-07 08:51:22.397441 UTC
+2016-12-12 13:29:23.455721 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:Lib 7103
-  interface hash: e044b762586d99034175b86ef0b36163
-  ABI hash: 2630df0df0b13ac81f9e1b683a0d85ef
-  export-list hash: 1b6538a4b3bd87264962188ef7d854af
-  orphan hash: b60c5f42495a1700b2e7429cae30b0b3
+  interface hash: 9f9ade5021a7f9875db1fbe1629ec7c9
+  ABI hash: 8ef8bffc85b5bcaea1ea3b8b6a5b639e
+  export-list hash: 66bc866813f349b135c20dc4ddbd7697
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
   sig of: Nothing
   used TH splices: False
@@ -227,32 +227,15 @@ import  -/  FindContours e5748dd4565c8c3e548f7a4ae6520b33
 import  -/  ResizeImage 8cf46425a3324e6bd1339e5052c284ea
   exports: df26a02e1904da0b1c9922b50121b382
   resizeImage 090b7a846fdb0b7b5f6940c355252678
-import  -/  RightReceipt 46101e551e1d35642e7040f5f6957aac
+import  -/  RightReceipt a3041beeb3485a9029970ba5812d8871
   exports: fc5dd0e223bbcdebdc8151409fe91582
-  findReceipt 0c9728760a4cc18339dfd6b06afe33bb
+  findReceipt bd7862f20f715d0db5aa12aa1fd0cd20
 import  -/  Utils 2e856b50208fdde509d21e6a8a323d34
   exports: 0a04ff5e9ffd8025faa2d6c44be78a68
   dictAreaPoints 55c37230fe9a0695b97109c1f72d46c8
   getListOfPoints 6d74a341bf8f4344592c24c63bba7750
 import  -/  vector-algorithms-0.7.0.1@vecto_2O3XZ6glbAwDmJCc3dC3Ee:Data.Vector.Algorithms.Intro 108378b1513929dc10e120d12ef7d1aa
 import  -/  vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector 512d7f6fa3b1d8745a1f7b6f5b8fd295
-5a510aadfff28eb499a74915cbd10161
-  $s$fShow(,)_$s$fShow(,)_$cshowList ::
-    [(GHC.Int.Int32, GHC.Int.Int32)] -> GHC.Show.ShowS
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
-     Unfolding: InlineRule (2, True, False)
-                (\ eta :: [(GHC.Int.Int32, GHC.Int.Int32)]
-                   eta1 :: GHC.Base.String ->
-                 GHC.Show.showList__
-                   @ (GHC.Int.Int32, GHC.Int.Int32)
-                   (GHC.Show.$fShow(,)_$cshowsPrec
-                      @ GHC.Int.Int32
-                      @ GHC.Int.Int32
-                      GHC.Int.$fShowInt32
-                      GHC.Int.$fShowInt32
-                      GHC.Show.shows18)
-                   eta
-                   eta1) -}
 5d5a1637d051c2eec32d1457f79c0fcd
   $scoerceMat2 ::
     Data.Proxy.Proxy ('OpenCV.TypeLevel.S 1)
@@ -280,12 +263,12 @@ cf626d9eea372682fcedf5026ae6264f
                          @ (OpenCV.TypeLevel.DS GHC.Int.Int32)
                          (OpenCV.TypeLevel.D @ GHC.Int.Int32)
                          (GHC.Types.[] @ (OpenCV.TypeLevel.DS GHC.Int.Int32))))) -}
-1f677863f379896b3d28ce404fbefb32
+a52daaf8cd54381061cb0ed5456423bd
   controller :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Lib.controller1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-6285d2ab354ffea4887a7ee8cc5f34ac
+5dd1fa6e66910acd976f14edd157bbbe
   controller1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -295,7 +278,7 @@ cf626d9eea372682fcedf5026ae6264f
                         @ GHC.IO.Handle.Types.Handle
                         @ ()
                         @ Data.ByteString.Internal.ByteString
-                        Lib.controller2
+                        Lib.controller3
                           `cast`
                         (Sym (GHC.Types.NTCo:IO[0] <GHC.IO.Handle.Types.Handle>_R))
                         GHC.IO.Handle.hClose1
@@ -443,8 +426,8 @@ cf626d9eea372682fcedf5026ae6264f
                           -> GHC.Types.[] @ OpenCV.ImgProc.StructuralAnalysis.Contour }
                     } in
                     GHC.Show.showList__
-                      @ [(GHC.Int.Int32, GHC.Int.Int32)]
-                      Lib.$s$fShow(,)_$s$fShow(,)_$cshowList
+                      @ (GHC.Int.Int32, GHC.Int.Int32)
+                      Lib.controller2
                       (RightReceipt.findReceipt
                          (Utils.dictAreaPoints
                             (Utils.getListOfPoints_go
@@ -453,28 +436,48 @@ cf626d9eea372682fcedf5026ae6264f
                       (GHC.Types.[] @ GHC.Types.Char) })
                    GHC.Types.True
                    ipv4 } } }) -}
-1b111e93758719a18f339acdaf718115
+043f0a3a506f6437b917edba0e67aa0b
   controller2 ::
+    (GHC.Int.Int32, GHC.Int.Int32)
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ w3 :: (GHC.Int.Int32, GHC.Int.Int32)
+                   w4 :: GHC.Base.String[OneShot] ->
+                 case w3 of ww { (,) ww1 ww2 ->
+                 GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows9
+                   (case ww1 of wild { GHC.Int.I32# x# ->
+                    case GHC.Show.$wshowSignedInt
+                           0
+                           x#
+                           (GHC.Types.:
+                              @ GHC.Types.Char
+                              GHC.Show.showList__1
+                              (GHC.Show.$fShow(,)_$sgo
+                                 (\ eta :: GHC.Base.String ->
+                                  case ww2 of wild1 { GHC.Int.I32# x#1 ->
+                                  case GHC.Show.$wshowSignedInt 0 x#1 eta of ww4 { (#,#) ww5 ww6 ->
+                                  GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                                 (GHC.Types.[] @ GHC.Show.ShowS)
+                                 (GHC.Types.:
+                                    @ GHC.Types.Char
+                                    GHC.Show.shows8
+                                    w4))) of ww4 { (#,#) ww5 ww6 ->
+                    GHC.Types.: @ GHC.Types.Char ww5 ww6 } }) }) -}
+caa3c505865f2a57c34f79a812795e65
+  controller3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           GHC.IO.Handle.Types.Handle #)
   {- Arity: 1,
      Unfolding: (GHC.IO.Handle.FD.openBinaryFile1
-                   Lib.controller3
+                   Lib.controller4
                    GHC.IO.IOMode.ReadMode) -}
-5d28dbdc193ca51af3aee6d683478f62
-  controller3 :: [GHC.Types.Char]
+40dfaa705fca2ef40ac9ce95fe50988a
+  controller4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "/home/chuck/Pictures/rumpler_black.JPG"#) -}
-"SPEC/Lib $fShow(,)_$cshowList @ Int32 @ Int32" [ALWAYS] forall $dShow :: GHC.Show.Show
-                                                                            GHC.Int.Int32
-                                                                $dShow1 :: GHC.Show.Show
-                                                                             GHC.Int.Int32
-  GHC.Show.$fShow(,)_$cshowList @ GHC.Int.Int32
-                                @ GHC.Int.Int32
-                                $dShow
-                                $dShow1
-  = Lib.$s$fShow(,)_$s$fShow(,)_$cshowList
+                   "/home/chuck/Documents/Working/OCR/ocrexperiments/python_image_processing/test/pics/IMG_0650.JPG"#) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

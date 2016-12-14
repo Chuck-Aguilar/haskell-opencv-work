@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2016-12-07 08:51:22.003369 UTC
+2016-12-14 10:17:54.307101 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:RightReceipt 7103
-  interface hash: dd23845f835f8a276dcc218e8ab38cfd
-  ABI hash: 46101e551e1d35642e7040f5f6957aac
+  interface hash: 8db00d7ad0b0e5ba602e714b2eaefd5f
+  ABI hash: a3041beeb3485a9029970ba5812d8871
   export-list hash: fc5dd0e223bbcdebdc8151409fe91582
   orphan hash: 61b1b960f998890699ba44bbbbfb13fa
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
@@ -195,8 +195,10 @@ family instance modules: adjunctions-4.3@adjun_HUA1si0oygHIohE6wWvtj8:Data.Funct
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed
                          vector-0.11.0.0@vecto_LmZ3LQW4ivu8MsQuVgukln:Data.Vector.Unboxed.Base
 import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
 import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
 import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
 import  -/  base-4.8.2.0:Data.Tuple 012ad951a59a9d85fe1de36a2f012986
 import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.2.0:GHC.Float e532d434ec2447d809887c0fca1d78a5
@@ -207,15 +209,19 @@ import  -/  base-4.8.2.0:GHC.Real 1281efa9baf803bc7859d7efb89a38b3
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
 import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
 import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 61f4bf9a28a6b2eb8805b671ced219c1
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
 import  -/  linear-1.20.5@linea_FAr6Jc872as1DHBSxOu5Yv:Linear.V2 5c727ef3668ea96ff4edd21393f561f0
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV 0516587730557b4bb0273cbbda21a536
 import  -/  opencv-0.0.0@openc_1SLz9U54w6XF9bMHWhrI8R:OpenCV.Internal.Core.Types.Mat 5db2e2cb1075e60a5597612ce0a1a7ef
-import  -/  ApproxPolyDP 1b5f89c61c95c09e9d476cb6f5a225b5
-  exports: 678502985dd5d544af641dce21850acb
-  minifyPolygon 71f40e37f75aedbaf49b446f5063e9f7
+import  -/  ApproxPolyDP 3980f975bd05e0e52611688e35d8adf0
+  exports: 013eacd1d081ba994b35f344ba0e7e8c
+  minifyPolygon 3a7657bf1095d74277076f3edf3ef374
 import  -/  ConvexHull 1632b0ec6e0efa0b9b03eaeb827f673a
   exports: 5a106fd7db33c9820a85cc3d924e307d
   convexHull ad21a3fef117368190adb380d1675561
+import  -/  RamerDouglasPeuckerParts 928693e1b1d625cfb86a3767f7fd3752
+  Point 55bb00c0bebb77344f3a53734c3a116d
+  distFunc 087b1d62e94692ebd0dce7b0eaefb179
 73c5112bafc06683833a1f0f87b3a23a
   $sfromList ::
     [(GHC.Types.Double, a)] -> Data.Map.Base.Map GHC.Types.Double a
@@ -288,60 +294,11 @@ b5e58cc3655fa26675828a254930dd2d
     -> [(GHC.Types.Double, a)]
     -> Data.Map.Base.Map GHC.Types.Double a
   {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
-0c9728760a4cc18339dfd6b06afe33bb
+bd7862f20f715d0db5aa12aa1fd0cd20
   findReceipt ::
-    [(GHC.Types.Double, [(GHC.Int.Int32, GHC.Int.Int32)])]
-    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
-  {- Arity: 1, Strictness: <S,1*U>,
-     Unfolding: (\ areaPoints :: [(GHC.Types.Double,
-                                   [(GHC.Int.Int32, GHC.Int.Int32)])] ->
-                 let {
-                   mapAreaPoints :: Data.Map.Base.Map
-                                      GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
-                   = RightReceipt.$sfromList
-                       @ [(GHC.Int.Int32, GHC.Int.Int32)]
-                       areaPoints
-                 } in
-                 RightReceipt.findReceipt_go
-                   (RightReceipt.findReceipt_go1
-                      (GHC.Types.[] @ [(GHC.Int.Int32, GHC.Int.Int32)])
-                      mapAreaPoints)
-                   (GHC.Base.map
-                      @ GHC.Types.Double
-                      @ GHC.Types.Double
-                      RightReceipt.findReceipt1
-                      (GHC.List.reverse1
-                         @ GHC.Types.Double
-                         (RightReceipt.findReceipt_go10
-                            (GHC.Types.[] @ GHC.Types.Double)
-                            mapAreaPoints)
-                         (GHC.Types.[] @ GHC.Types.Double)))) -}
-a58e768e6beea9b64669f03fb8b37681
-  findReceipt1 :: GHC.Types.Double -> GHC.Types.Double
-  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
-     Unfolding: InlineRule (1, True, False)
-                (\ ds :: GHC.Types.Double ->
-                 case ds of wild { GHC.Types.D# x ->
-                 GHC.Types.D# (GHC.Prim.*## x 2.0e-2) }) -}
-eca322fed84840712cebbc8f7ca06c81
-  findReceipt_go ::
-    [[RamerDouglasPeuckerParts.Point]]
-    -> [GHC.Types.Double] -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
-  {- Arity: 2, Strictness: <S,1*U><L,1*U> -}
-8045da076d0c81f269219891aa0b0483
-  findReceipt_go1 ::
-    [[(GHC.Int.Int32, GHC.Int.Int32)]]
-    -> Data.Map.Base.Map
-         GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
-    -> [[(GHC.Int.Int32, GHC.Int.Int32)]]
-  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
-8886d7bf0787c993861417c34f8673ad
-  findReceipt_go10 ::
-    [GHC.Types.Double]
-    -> Data.Map.Base.Map
-         GHC.Types.Double [(GHC.Int.Int32, GHC.Int.Int32)]
-    -> [GHC.Types.Double]
-  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+    [(GHC.Types.Double, [RamerDouglasPeuckerParts.Point])]
+    -> [RamerDouglasPeuckerParts.Point]
+  {- Arity: 1, Strictness: <S,1*U> -}
 "SPEC/RightReceipt fromList @ Double _" [ALWAYS] forall @ a
                                                         $dOrd :: GHC.Classes.Ord GHC.Types.Double
   Data.Map.Base.fromList @ GHC.Types.Double @ a $dOrd

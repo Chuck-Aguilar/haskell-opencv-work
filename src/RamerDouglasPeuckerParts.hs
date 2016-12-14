@@ -10,16 +10,27 @@ module RamerDouglasPeuckerParts
         myfst,
         mysnd,
         trd,
-        getRightSliceFromStack
+        getRightSliceFromStack,
+        optimizing,
+        distFunc
     ) where
 
 import Data.Maybe
 import Data.List
+import Control.Monad ( void )
 import GHC.Int (Int32)
 
-type Range = [Int]
-type Stack = [Range]
-type Point = (Int32, Int32) 
+type Range     = [Int]
+type Stack     = [Range]
+type Point     = (Int32, Int32) 
+type Direction = (Bool, Bool)
+
+up    = (True, True)
+down  = (False, False)
+left  = (True, False)
+right = (False, True)
+hori  = True
+verti = False
 
 data All = All { finalContours :: [Point], stack :: Stack } deriving Show
 
@@ -183,6 +194,11 @@ addSafePos pos count
         | otherwise          = pos + 1
 
 
+lessSafePos :: Int -> Int -> Int
+lessSafePos pos count
+        | (pos - 1) < 0 = count - 1
+        | otherwise     = pos - 1
+
 
 last_stage :: Int -> Double -> Int -> Int -> Int -> Point -> Int -> Point -> [Point] -> [Point]
 last_stage i epsi count new_count pos start_pt wpos pt dstContours
@@ -216,18 +232,114 @@ replaceListValue (x:dstContours) end_pt wpos
         | otherwise = x : replaceListValue dstContours end_pt (wpos - 1)        
 
 
-optimizing :: [Point] -> [Point]
-optimizing listOfPoint = optimizingRecu listOfPoint 0 0 False True []
+optimizing :: [Point] -> Double -> [Point]
+optimizing listOfPoints epsi = do
+    let listOfLines'     = listOfLines listOfPoints (length listOfPoints) 0 False True []
+    let listOfFinalLines = foldl (\acc x -> acc ++ [getSparePoint x epsi]) [] listOfLines'
+    let takeOf           = foldl (++) [] listOfFinalLines
+    listOfPoints \\ takeOf
 
-optimizingRecu :: [Point] -> Int -> Int -> Bool -> Bool -> [Point] -> [Point]
-optimizingRecu listOfPoint count pos theLast pointsYet acc
+
+getSparePoint :: [Point] -> Double -> [Point]
+getSparePoint listOfPoints epsi
+    | (length listOfPoints) <= 2 = []
+    | otherwise                  = listOfPoints \\ (rdpFinal listOfPoints listOfPoints epsi [])
 
 
-findDirection :: Point -> Point -> Bool
+listOfLines :: [Point] -> Int -> Int -> Bool -> Bool -> [[Point]] -> [[Point]]
+listOfLines listOfPoint count pos theLast pointsYet acc
+    | not pointsYet = acc
+    | otherwise     = listOfLines listOfPoint count (myfst takingPoints) (fst (mysnd takingPoints)) (snd (mysnd takingPoints)) (acc ++ [trd takingPoints])
+    where 
+        takingPoints   = takeEveryPoint listOfPoint currentPoint foundDirection count (addSafePos pos count) theLast pointsYet ([currentPoint])
+        currentPoint   = listOfPoint !! pos
+        foundDirection = findDirection currentPoint (listOfPoint !! (addSafePos pos count))
+
+
+
+takeEveryPoint :: [Point] -> Point -> Direction -> Int -> Int -> Bool -> Bool -> [Point] -> (Int, (Bool, Bool), [Point])
+takeEveryPoint listOfPoint lastPoint direction count pos theLast pointsYet acc
+    | not (sameDirection direction lastPoint currentPoint) = ((lessSafePos pos count), (theLast, not (theLast && pointsYet)), acc)
+    | (lastPoint == realLastPoint) && (theLast == False)   = takeEveryPoint listOfPoint lastPoint direction count pos True pointsYet acc
+    | otherwise                                            = takeEveryPoint listOfPoint currentPoint direction count (addSafePos pos count) theLast pointsYet (acc ++ [currentPoint])
+    where
+        currentPoint  = listOfPoint !! pos
+        realLastPoint = listOfPoint !! (count - 1)
+
+
+findDirection :: Point -> Point -> Direction
 findDirection (x, y) (x1, y1)
-    | 
+    | (slope == hori) && (x1 >= x)  = right
+    | (slope == hori) && (x1 < x)   = left
+    | (slope == verti) && (y1 >= y) = up
+    | otherwise                     = down
+    where
+        slope = getSlope (x, y) (x1, y1)
 
 
+getSlope :: Point -> Point -> Bool
+getSlope (x, y) (x1, y1)
+    | slope <= 1 = hori
+    | otherwise  = verti
+    where
+        slope = abs (fromIntegral (y1 - y) /  fromIntegral (x1 - x))
 
 
+sameDirection :: Direction -> Point -> Point -> Bool
+sameDirection direction point1 point2
+    | direction == findDirection point1 point2 = True
+    | otherwise                                = False
 
+
+pointToPointDist :: Point -> Point -> Double
+pointToPointDist (x1, y1) (x2, y2) = sqrt (fromIntegral (x'^2 + y'^2))
+    where
+        x' = x1 - x2
+        y' = y1 - y2
+
+
+pointToLineDist :: Point -> Point -> Point -> Double  --Line -> (x1, y1) ^ (x2, y2)
+pointToLineDist (x1, y1) (x2, y2) (x0, y0) = abs (fromIntegral ((y2 - y1) * x0 - (x2 - x1) * y0 + x2 * y1 - y2 * x1) / pointToPointDist (x1, y1) (x2, y2))
+
+
+findFarthestPoint :: [Point] -> Point -> Point -> Double -> Point
+findFarthestPoint [] firstPoint finalPoint dist = finalPoint
+findFarthestPoint (currntPoint : pointList) firstPoint finalPoint dist
+    | pointToPointDist currntPoint firstPoint >= dist = findFarthestPoint pointList firstPoint currntPoint (pointToPointDist currntPoint firstPoint) 
+    | otherwise                  = findFarthestPoint pointList firstPoint finalPoint dist 
+
+
+findFarthestTwoPoints :: [Point] -> [Point] -> Double -> [Point]
+findFarthestTwoPoints [] finalList dist = finalList
+findFarthestTwoPoints (currntPoint : pointList) finalList dist
+    |  newDist >= dist = findFarthestTwoPoints pointList [currntPoint, farthestPoint] newDist
+    | otherwise       = findFarthestTwoPoints pointList finalList dist
+    where       
+        farthestPoint = findFarthestPoint pointList currntPoint currntPoint 0       
+        newDist = pointToPointDist farthestPoint currntPoint        
+
+
+findFarthestPointToLine :: [Point] -> [Point] -> Point -> Double -> Point
+findFarthestPointToLine [] line finalPoint dist = finalPoint
+findFarthestPointToLine (currntPoint : pointList) line finalPoint dist
+    | newDist >= dist = findFarthestPointToLine pointList line currntPoint newDist
+    | otherwise      = findFarthestPointToLine pointList line finalPoint dist
+    where
+        newDist = pointToLineDist (line !! 0) (line !! 1) currntPoint
+
+
+rdpFinal :: [Point] -> [Point] -> Double -> [Point] -> [Point]
+rdpFinal [x] original epsi acc           = acc ++ [x]
+rdpFinal listOfPoints original epsi acc
+        | (length listOfPoints) == 2 = rdpFinal restOfList original epsi (acc ++ [point1])
+        | distToLine < epsi          = rdpFinal restOfList original epsi (acc ++ [point1])
+        | otherwise                  = rdpFinal tilPoint original epsi acc
+        where
+                twoPoints       = findFarthestTwoPoints listOfPoints [] 0
+                point1          = twoPoints !! 0
+                point2          = twoPoints !! 1
+                distOfTwoPoints = distFunc point1 point2
+                farthestPoint   = findFarthestPointToLine listOfPoints twoPoints (0,0) 0
+                distToLine      = pointToLineDist point1 point2 farthestPoint
+                restOfList      = drop (fromJust (elemIndex point2 original)) original
+                tilPoint        = take (fromJust (elemIndex farthestPoint original)) original ++ [farthestPoint]

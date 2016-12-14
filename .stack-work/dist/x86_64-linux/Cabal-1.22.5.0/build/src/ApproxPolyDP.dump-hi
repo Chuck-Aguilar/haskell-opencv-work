@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2016-11-30 16:43:42.004077 UTC
+2016-12-14 08:58:49.982224 UTC
 
 interface simpl_3KtLGDpFPvjB6VnwWh4q2E:ApproxPolyDP 7103
-  interface hash: c26a8251d3782e3ca346827af356665b
-  ABI hash: 1b5f89c61c95c09e9d476cb6f5a225b5
-  export-list hash: 678502985dd5d544af641dce21850acb
+  interface hash: 0fa5151e109268e33ddf4b52f7163328
+  ABI hash: 3980f975bd05e0e52611688e35d8adf0
+  export-list hash: 013eacd1d081ba994b35f344ba0e7e8c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 553e9ae98c737f4e18a6dcc15164f1ca
   sig of: Nothing
@@ -13,6 +13,8 @@ interface simpl_3KtLGDpFPvjB6VnwWh4q2E:ApproxPolyDP 7103
   where
 exports:
   ApproxPolyDP.minifyPolygon
+  RamerDouglasPeuckerParts.distFunc
+  RamerDouglasPeuckerParts.Point
 module dependencies: RamerDouglasPeuckerParts
 package dependencies: base-4.8.2.0* ghc-prim-0.4.0.0
                       integer-gmp-1.0.0.0
@@ -26,18 +28,20 @@ import  -/  base-4.8.2.0:Data.List 3f0782c8d4bf50eecefcd5ea1798aac8
 import  -/  base-4.8.2.0:Data.Maybe 1cb58de2b04ee3c0c0a7dc9201184aff
 import  -/  base-4.8.2.0:GHC.Num 9f42750c866f5832ca565146bd660c60
 import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
-import  -/  RamerDouglasPeuckerParts 83892035757d721e8b32773a69b1549d
-  exports: d2a15a16ae69b7e8c5e24a42e635690a
+import  -/  RamerDouglasPeuckerParts 928693e1b1d625cfb86a3767f7fd3752
+  exports: 53f33ba7dc346d92756b5a0c538b94cf
   All bab1527c8e64bd5fbe450e4a491c5265
   Point 55bb00c0bebb77344f3a53734c3a116d
+  distFunc 087b1d62e94692ebd0dce7b0eaefb179
   findFarthestPoints abc0bf7d58f4d3f6c7508848838a0dcb
   getRightSliceFromStack ffd034887e80854546cd9d503d0c2979
   initStack ac3417920b3b4ecc28eba531fb53a02b
   myfst 88aab8a86f624feb5fcdcfacbf78d510
   mysnd 4950d1dc70fa98661e4bbacd040f9814
+  optimizing c8a98b109efecc8bf4763b52b01534d0
   recurProcess f7a4c05794aca1b6445e972451bcffe6
   trd f166ea3d059c09f6fe744b6df2f3c0e3
-71f40e37f75aedbaf49b446f5063e9f7
+3a7657bf1095d74277076f3edf3ef374
   minifyPolygon ::
     [RamerDouglasPeuckerParts.Point]
     -> GHC.Types.Double -> [RamerDouglasPeuckerParts.Point]
@@ -74,13 +78,15 @@ import  -/  RamerDouglasPeuckerParts 83892035757d721e8b32773a69b1549d
                         ww5
                         count
                         ApproxPolyDP.new_all of ww { (#,#) ww1 ww7 ->
-                 RamerDouglasPeuckerParts.$wrecurProcess
-                   ww1
-                   ww7
-                   srcContours
-                   eps
-                   (RamerDouglasPeuckerParts.$wgetRightSliceFromStack ww7)
-                   count } }) -}
+                 RamerDouglasPeuckerParts.optimizing
+                   (RamerDouglasPeuckerParts.$wrecurProcess
+                      ww1
+                      ww7
+                      srcContours
+                      eps
+                      (RamerDouglasPeuckerParts.$wgetRightSliceFromStack ww7)
+                      count)
+                   eps } }) -}
 e753d177f34325d91d6ca428e34c4ebc
   minifyPolygon1 :: GHC.Int.Int32
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Int.I32# 0) -}

@@ -14,39 +14,72 @@ import Data.Map
 import Data.Maybe
 import Data.List
 
-findPerimeter :: Map Double [(Int32, Int32)] -> [Double]
+findPerimeter :: Map Double [Point] -> [Double]
 findPerimeter areaPoints = Data.Map.foldl (\acc x -> acc ++ [getPerimeter x]) [] areaPoints
 
-getPerimeter :: [(Int32, Int32)] -> Double
+
+getPerimeter :: [Point] -> Double
 getPerimeter (firstPoint : points) = getPerimeter' points firstPoint firstPoint 0
 	where
-		getPerimeter' :: [(Int32, Int32)] -> (Int32, Int32) -> (Int32, Int32) -> Double -> Double
+		getPerimeter' :: [Point] -> Point -> Point -> Double -> Double
 		getPerimeter' [] (crrntX, crrntY) (prevX, prevY) acc = acc + (sqrt (fromIntegral ((crrntX - prevX) ^ 2 + (crrntY - prevY) ^ 2)))
 		getPerimeter' ((crrntX, crrntY) : point) firstPoint (prevX, prevY) acc = getPerimeter' point firstPoint (crrntX, crrntY) (acc + (sqrt (fromIntegral ((crrntX - prevX) ^ 2 + (crrntY - prevY) ^ 2))))
 
 
-
---findReceipt areaPoints = findAllPolyDp (getListOfPoints mapAreaPoints) epsilons
---findReceipt areaPoints = Data.List.map (length) (findAllPolyDp (applyConvex (getListOfPoints mapAreaPoints)) epsilons)
---findReceipt areaPoints = Data.List.map (length) (findAllPolyDp ((getListOfPoints mapAreaPoints)) epsilons)
-findReceipt areaPoints = findAllPolyDp ((getListOfPoints mapAreaPoints)) epsilons
---findReceipt areaPoints = epsilons
---findReceipt areaPoints = applyConvex (getListOfPoints mapAreaPoints)
---findReceipt areaPoints = (((getListOfPoints mapAreaPoints) !! 3), (epsilons !! 3))
-
-	where
+findReceipt :: [(Double, [Point])] -> [Point]
+findReceipt areaPoints = ordered
+	where		
 		mapAreaPoints = fromList areaPoints
-		epsilons = findEpsilon (reverse (findPerimeter mapAreaPoints))		
+		epsilons      = findEpsilon (reverse (findPerimeter mapAreaPoints))		
+		allContours   = findAllPolyDp ((getListOfPoints mapAreaPoints)) epsilons
+		unordered     = getReceipt allContours
+		ordered		  = orderPoints unordered
+
+
+getReceipt :: [[Point]] -> [Point]
+getReceipt [] = []
+getReceipt (x : allContours)
+	| (length x) == 4 = x
+	| otherwise       = getReceipt allContours
+
 
 findEpsilon :: [Double] -> [Double]
 findEpsilon xs = Data.List.map (* 0.02) xs
 
-findAllPolyDp :: [[(Int32, Int32)]] -> [Double] -> [[(Int32, Int32)]]
+
+findAllPolyDp :: [[Point]] -> [Double] -> [[Point]]
 findAllPolyDp listOfPoints epsilons = Data.List.map (uncurry minifyPolygon) (zip listOfPoints epsilons)
 
-getListOfPoints :: Map Double [(Int32, Int32)] -> [[(Int32, Int32)]]
+
+getListOfPoints :: Map Double [Point] -> [[Point]]
 getListOfPoints areaPoints = Data.Map.foldl (\acc x -> x : acc) [] areaPoints
 
-applyConvex :: [[(Int32, Int32)]] -> [[(Int32, Int32)]]
+
+applyConvex :: [[Point]] -> [[Point]]
 applyConvex list = Data.List.map convexHull list
 
+
+orderPoints :: [Point] -> [Point]
+orderPoints [] = []
+orderPoints listOfPoints = [topLeft, topRight, bottomRight, bottomLeft]
+	where
+		listSum     = Data.List.map (\(x,y) -> x + y) listOfPoints
+		bottomLeft  = listOfPoints !! (fromJust (elemIndex (minimum listSum) listSum))
+		topRight    = listOfPoints !! (fromJust (elemIndex (maximum listSum) listSum))
+		restList    = listOfPoints Data.List.\\ [bottomLeft, topRight]
+		listDif     = Data.List.map (\(x,y) -> x - y) listOfPoints
+		topLeft     = listOfPoints !! (fromJust (elemIndex (minimum listDif) listDif))
+		bottomRight = listOfPoints !! (fromJust (elemIndex (maximum listDif) listDif))
+
+
+getNewImageSize :: [Point] -> (Int, Int)
+getNewImageSize pointsOfReceipt = (fromIntegral (ceiling (max widthA widthB)), fromIntegral (ceiling (max heightA heightB)))
+	where
+		topLeft     = pointsOfReceipt !! 0
+		topRight    = pointsOfReceipt !! 1
+		bottomRight = pointsOfReceipt !! 2
+		bottomLeft  = pointsOfReceipt !! 3
+		widthA      = distFunc topLeft topRight
+		widthB      = distFunc bottomRight bottomLeft
+		heightA     = distFunc topLeft bottomLeft
+		heightB     = distFunc topRight bottomRight
